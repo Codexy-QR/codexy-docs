@@ -1,0 +1,44 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\pipea\\OneDrive\\Escritorio\\Temporal\\ADSO\\Tecnica\\Proyectos_Grado\\InventaryQR\\Diagram_Codexy\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{8043D4E8-5999-4EA2-BBE3-EE4B11413C72}|Diagram_Codexy.csproj|c:\\users\\pipea\\onedrive\\escritorio\\temporal\\adso\\tecnica\\proyectos_grado\\inventaryqr\\diagram_codexy\\mer.edmx||{C99AEA30-8E36-4515-B76F-496F5A48A6AA}|",
+      "RelativeMoniker": "D:0:0:{8043D4E8-5999-4EA2-BBE3-EE4B11413C72}|Diagram_Codexy.csproj|solutionrelative:mer.edmx||{C99AEA30-8E36-4515-B76F-496F5A48A6AA}|"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 2,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:1:0:{d212f56b-c48a-434c-a121-1c5d80b59b9f}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "MER.edmx [Diagram1]",
+              "DocumentMoniker": "C:\\Users\\pipea\\OneDrive\\Escritorio\\Temporal\\ADSO\\Tecnica\\Proyectos_Grado\\InventaryQR\\Diagram_Codexy\\MER.edmx",
+              "RelativeDocumentMoniker": "MER.edmx",
+              "ToolTip": "C:\\Users\\pipea\\OneDrive\\Escritorio\\Temporal\\ADSO\\Tecnica\\Proyectos_Grado\\InventaryQR\\Diagram_Codexy\\MER.edmx [Diagram1]",
+              "RelativeToolTip": "MER.edmx [Diagram1]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001116|",
+              "WhenOpened": "2025-08-11T17:43:56.709Z",
+              "EditorCaption": " [Diagram1]"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
