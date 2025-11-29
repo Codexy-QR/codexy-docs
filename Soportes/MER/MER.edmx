@@ -1,0 +1,847 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+      <Schema xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl" Namespace="MER.Store" Alias="Self" Provider="System.Data.SqlClient" ProviderManifestToken="2005">
+        <EntityContainer Name="MERTargetContainer" >
+        </EntityContainer>
+      </Schema>
+    </edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema xmlns="http://schemas.microsoft.com/ado/2009/11/edm" xmlns:cg="http://schemas.microsoft.com/ado/2006/04/codegeneration" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" Namespace="MER" Alias="Self" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" annotation:UseStrongSpatialTypes="false">
+        <EntityContainer Name="MERContainer" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="PersonSet" EntityType="MER.Person" />
+          <EntitySet Name="RoleSet" EntityType="MER.Role" />
+          <EntitySet Name="UserRoleSet" EntityType="MER.UserRole" />
+          <EntitySet Name="FormSet" EntityType="MER.Form" />
+          <EntitySet Name="ModuleSet" EntityType="MER.Module" />
+          <EntitySet Name="FormModuleSet" EntityType="MER.FormModule" />
+          <EntitySet Name="RoleFormPermissionSet" EntityType="MER.RoleFormPermission" />
+          <EntitySet Name="PermissionSet" EntityType="MER.Permission" />
+          <EntitySet Name="AuditorySet" EntityType="MER.Auditory" />
+          <EntitySet Name="UserSet" EntityType="MER.User" />
+          <AssociationSet Name="PersonUser" Association="MER.PersonUser">
+            <End Role="Person" EntitySet="PersonSet" />
+            <End Role="User" EntitySet="UserSet" />
+          </AssociationSet>
+          <AssociationSet Name="UserUserRole" Association="MER.UserUserRole">
+            <End Role="User" EntitySet="UserSet" />
+            <End Role="UserRole" EntitySet="UserRoleSet" />
+          </AssociationSet>
+          <AssociationSet Name="RoleUserRole" Association="MER.RoleUserRole">
+            <End Role="Role" EntitySet="RoleSet" />
+            <End Role="UserRole" EntitySet="UserRoleSet" />
+          </AssociationSet>
+          <AssociationSet Name="FormFormModule" Association="MER.FormFormModule">
+            <End Role="Form" EntitySet="FormSet" />
+            <End Role="FormModule" EntitySet="FormModuleSet" />
+          </AssociationSet>
+          <AssociationSet Name="ModuleFormModule" Association="MER.ModuleFormModule">
+            <End Role="Module" EntitySet="ModuleSet" />
+            <End Role="FormModule" EntitySet="FormModuleSet" />
+          </AssociationSet>
+          <AssociationSet Name="RoleRoleFormPermission" Association="MER.RoleRoleFormPermission">
+            <End Role="Role" EntitySet="RoleSet" />
+            <End Role="RoleFormPermission" EntitySet="RoleFormPermissionSet" />
+          </AssociationSet>
+          <AssociationSet Name="FormRoleFormPermission" Association="MER.FormRoleFormPermission">
+            <End Role="Form" EntitySet="FormSet" />
+            <End Role="RoleFormPermission" EntitySet="RoleFormPermissionSet" />
+          </AssociationSet>
+          <AssociationSet Name="PermissionRoleFormPermission" Association="MER.PermissionRoleFormPermission">
+            <End Role="Permission" EntitySet="PermissionSet" />
+            <End Role="RoleFormPermission" EntitySet="RoleFormPermissionSet" />
+          </AssociationSet>
+          <EntitySet Name="OperatingGroupSet" EntityType="MER.OperatingGroup" />
+          <AssociationSet Name="UserOperationalGroup" Association="MER.User_Area_ManagerOperationalGroup">
+            <End Role="User" EntitySet="UserSet" />
+            <End Role="OperationalGroup" EntitySet="OperatingGroupSet" />
+          </AssociationSet>
+          <EntitySet Name="OperatingSet" EntityType="MER.Operating" />
+          <AssociationSet Name="UserOperating" Association="MER.UserOperating">
+            <End Role="User" EntitySet="UserSet" />
+            <End Role="Operating" EntitySet="OperatingSet" />
+          </AssociationSet>
+          <AssociationSet Name="OperationalGroupOperating" Association="MER.OperationalGroupOperating">
+            <End Role="OperationalGroup" EntitySet="OperatingGroupSet" />
+            <End Role="Operating" EntitySet="OperatingSet" />
+          </AssociationSet>
+          <EntitySet Name="InventarySet" EntityType="MER.Inventary" />
+          <EntitySet Name="CompanySet" EntityType="MER.Company" />
+          <EntitySet Name="BranchSet" EntityType="MER.Branch" />
+          <EntitySet Name="ZoneSet" EntityType="MER.Zone" />
+          <AssociationSet Name="UserBranch" Association="MER.UserBranch">
+            <End Role="User" EntitySet="UserSet" />
+            <End Role="Branch" EntitySet="BranchSet" />
+          </AssociationSet>
+          <AssociationSet Name="CompanyBranch" Association="MER.CompanyBranch">
+            <End Role="Company" EntitySet="CompanySet" />
+            <End Role="Branch" EntitySet="BranchSet" />
+          </AssociationSet>
+          <AssociationSet Name="BranchZone" Association="MER.BranchZone">
+            <End Role="Branch" EntitySet="BranchSet" />
+            <End Role="Zone" EntitySet="ZoneSet" />
+          </AssociationSet>
+          <AssociationSet Name="UserZone" Association="MER.UserZone">
+            <End Role="User" EntitySet="UserSet" />
+            <End Role="Zone" EntitySet="ZoneSet" />
+          </AssociationSet>
+          <AssociationSet Name="ZoneInventary" Association="MER.ZoneInventary">
+            <End Role="Zone" EntitySet="ZoneSet" />
+            <End Role="Inventary" EntitySet="InventarySet" />
+          </AssociationSet>
+          <AssociationSet Name="OperationalGroupInventary" Association="MER.OperationalGroupInventary">
+            <End Role="OperationalGroup" EntitySet="OperatingGroupSet" />
+            <End Role="Inventary" EntitySet="InventarySet" />
+          </AssociationSet>
+          <EntitySet Name="InventaryDetailsSet" EntityType="MER.InventaryDetails" />
+          <AssociationSet Name="InventaryInventaryDetails" Association="MER.InventaryInventaryDetails">
+            <End Role="Inventary" EntitySet="InventarySet" />
+            <End Role="InventaryDetails" EntitySet="InventaryDetailsSet" />
+          </AssociationSet>
+          <EntitySet Name="ItemSet" EntityType="MER.Item" />
+          <EntitySet Name="CategoryItemSet" EntityType="MER.CategoryItem" />
+          <EntitySet Name="StateItemSet" EntityType="MER.StateItem" />
+          <EntitySet Name="WitnessSet" EntityType="MER.Witness" />
+          <AssociationSet Name="PersonWitness" Association="MER.PersonWitness">
+            <End Role="Person" EntitySet="PersonSet" />
+            <End Role="Witness" EntitySet="WitnessSet" />
+          </AssociationSet>
+          <AssociationSet Name="WitnessInventary" Association="MER.WitnessInventary">
+            <End Role="Witness" EntitySet="WitnessSet" />
+            <End Role="Inventary" EntitySet="InventarySet" />
+          </AssociationSet>
+          <AssociationSet Name="CategoryItemItem" Association="MER.CategoryItemItem">
+            <End Role="CategoryItem" EntitySet="CategoryItemSet" />
+            <End Role="Item" EntitySet="ItemSet" />
+          </AssociationSet>
+          <AssociationSet Name="StateItemItem" Association="MER.StateItemItem">
+            <End Role="StateItem" EntitySet="StateItemSet" />
+            <End Role="Item" EntitySet="ItemSet" />
+          </AssociationSet>
+          <AssociationSet Name="ZoneItem" Association="MER.ZoneItem">
+            <End Role="Zone" EntitySet="ZoneSet" />
+            <End Role="Item" EntitySet="ItemSet" />
+          </AssociationSet>
+          <AssociationSet Name="ItemInventaryDetails" Association="MER.ItemInventaryDetails">
+            <End Role="Item" EntitySet="ItemSet" />
+            <End Role="InventaryDetails" EntitySet="InventaryDetailsSet" />
+          </AssociationSet>
+          <EntitySet Name="VerificationSet" EntityType="MER.Verification" />
+          <AssociationSet Name="InventaryVerification" Association="MER.InventaryVerification">
+            <End Role="Inventary" EntitySet="InventarySet" />
+            <End Role="Verification" EntitySet="VerificationSet" />
+          </AssociationSet>
+          <AssociationSet Name="UserVerification" Association="MER.UserVerification">
+            <End Role="User" EntitySet="UserSet" />
+            <End Role="Verification" EntitySet="VerificationSet" />
+          </AssociationSet>
+          <EntitySet Name="NotificationSet" EntityType="MER.Notification" />
+          <AssociationSet Name="UserNotification" Association="MER.UserNotification">
+            <End Role="User" EntitySet="UserSet" />
+            <End Role="Notification" EntitySet="NotificationSet" />
+          </AssociationSet>
+          <AssociationSet Name="UserCompany" Association="MER.UserCompany">
+            <End Role="User" EntitySet="UserSet" />
+            <End Role="Company" EntitySet="CompanySet" />
+          </AssociationSet>
+          <AssociationSet Name="StateItemInventaryDetails" Association="MER.StateItemInventaryDetails">
+            <End Role="StateItem" EntitySet="StateItemSet" />
+            <End Role="InventaryDetails" EntitySet="InventaryDetailsSet" />
+          </AssociationSet>
+        </EntityContainer>
+        <EntityType Name="User">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Username" Type="String" Nullable="false" />
+          <Property Name="Password" Type="String" Nullable="false" />
+          <Property Name="Active" Type="String" Nullable="false" />
+          <NavigationProperty Name="Person" Relationship="MER.PersonUser" FromRole="User" ToRole="Person" />
+          <Property Name="PersonId" Type="Int32" Nullable="false" />
+          <NavigationProperty Name="UserRole" Relationship="MER.UserUserRole" FromRole="User" ToRole="UserRole" />
+          <NavigationProperty Name="OperationalGroup" Relationship="MER.User_Area_ManagerOperationalGroup" FromRole="User" ToRole="OperationalGroup" />
+          <NavigationProperty Name="Operating" Relationship="MER.UserOperating" FromRole="User" ToRole="Operating" />
+          <NavigationProperty Name="Branch" Relationship="MER.UserBranch" FromRole="User" ToRole="Branch" />
+          <NavigationProperty Name="Zone" Relationship="MER.UserZone" FromRole="User" ToRole="Zone" />
+          <NavigationProperty Name="Verification" Relationship="MER.UserVerification" FromRole="User" ToRole="Verification" />
+          <NavigationProperty Name="Notification" Relationship="MER.UserNotification" FromRole="User" ToRole="Notification" />
+          <NavigationProperty Name="Company" Relationship="MER.UserCompany" FromRole="User" ToRole="Company" />
+        </EntityType>
+        <EntityType Name="Person">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Name" Type="String" Nullable="false" />
+          <Property Name="LastName" Type="String" Nullable="false" />
+          <Property Name="Email" Type="String" Nullable="false" />
+          <Property Name="Phone" Type="String" Nullable="false" />
+          <Property Name="DocumentType" Type="String" Nullable="false" />
+          <Property Name="DocumentNumber" Type="String" Nullable="false" />
+          <Property Name="Active" Type="String" Nullable="false" />
+          <NavigationProperty Name="User" Relationship="MER.PersonUser" FromRole="Person" ToRole="User" />
+          <NavigationProperty Name="Witness" Relationship="MER.PersonWitness" FromRole="Person" ToRole="Witness" />
+        </EntityType>
+        <EntityType Name="Role">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Name" Type="String" Nullable="false" />
+          <Property Name="Description" Type="String" Nullable="false" />
+          <Property Name="Active" Type="String" Nullable="false" />
+          <NavigationProperty Name="UserRole" Relationship="MER.RoleUserRole" FromRole="Role" ToRole="UserRole" />
+          <NavigationProperty Name="RoleFormPermission" Relationship="MER.RoleRoleFormPermission" FromRole="Role" ToRole="RoleFormPermission" />
+        </EntityType>
+        <EntityType Name="UserRole">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Active" Type="String" Nullable="false" />
+          <NavigationProperty Name="User" Relationship="MER.UserUserRole" FromRole="UserRole" ToRole="User" />
+          <Property Name="UserId" Type="String" Nullable="false" />
+          <NavigationProperty Name="Role" Relationship="MER.RoleUserRole" FromRole="UserRole" ToRole="Role" />
+          <Property Name="RoleId" Type="Int32" Nullable="false" />
+        </EntityType>
+        <EntityType Name="Form">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Name" Type="String" Nullable="false" />
+          <Property Name="Description" Type="String" Nullable="false" />
+          <Property Name="Active" Type="String" Nullable="false" />
+          <NavigationProperty Name="FormModule" Relationship="MER.FormFormModule" FromRole="Form" ToRole="FormModule" />
+          <NavigationProperty Name="RoleFormPermission" Relationship="MER.FormRoleFormPermission" FromRole="Form" ToRole="RoleFormPermission" />
+        </EntityType>
+        <EntityType Name="Module">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Name" Type="String" Nullable="false" />
+          <Property Name="Description" Type="String" Nullable="false" />
+          <Property Name="Active" Type="String" Nullable="false" />
+          <NavigationProperty Name="FormModule" Relationship="MER.ModuleFormModule" FromRole="Module" ToRole="FormModule" />
+        </EntityType>
+        <EntityType Name="FormModule">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Active" Type="String" Nullable="false" />
+          <NavigationProperty Name="Form" Relationship="MER.FormFormModule" FromRole="FormModule" ToRole="Form" />
+          <Property Name="FormId" Type="Int32" Nullable="false" />
+          <NavigationProperty Name="Module" Relationship="MER.ModuleFormModule" FromRole="FormModule" ToRole="Module" />
+          <Property Name="ModuleId" Type="Int32" Nullable="false" />
+        </EntityType>
+        <EntityType Name="RoleFormPermission">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Active" Type="String" Nullable="false" />
+          <NavigationProperty Name="Role" Relationship="MER.RoleRoleFormPermission" FromRole="RoleFormPermission" ToRole="Role" />
+          <Property Name="RoleId" Type="Int32" Nullable="false" />
+          <NavigationProperty Name="Form" Relationship="MER.FormRoleFormPermission" FromRole="RoleFormPermission" ToRole="Form" />
+          <Property Name="FormId" Type="Int32" Nullable="false" />
+          <NavigationProperty Name="Permission" Relationship="MER.PermissionRoleFormPermission" FromRole="RoleFormPermission" ToRole="Permission" />
+          <Property Name="PermissionId" Type="Int32" Nullable="false" />
+        </EntityType>
+        <EntityType Name="Permission">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Name" Type="String" Nullable="false" />
+          <Property Name="Description" Type="String" Nullable="false" />
+          <Property Name="Active" Type="String" Nullable="false" />
+          <NavigationProperty Name="RoleFormPermission" Relationship="MER.PermissionRoleFormPermission" FromRole="Permission" ToRole="RoleFormPermission" />
+        </EntityType>
+        <EntityType Name="Auditory">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="TableName" Type="String" Nullable="false" />
+          <Property Name="Action" Type="String" Nullable="false" />
+          <Property Name="Key" Type="String" Nullable="false" />
+          <Property Name="Changes" Type="String" Nullable="false" />
+          <Property Name="Timestamp" Type="String" Nullable="false" />
+          <Property Name="PerformedBy" Type="String" Nullable="false" />
+        </EntityType>
+        <Association Name="PersonUser">
+          <End Type="MER.Person" Role="Person" Multiplicity="1" />
+          <End Type="MER.User" Role="User" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Person">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="User">
+              <PropertyRef Name="PersonId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="UserUserRole">
+          <End Type="MER.User" Role="User" Multiplicity="1" />
+          <End Type="MER.UserRole" Role="UserRole" Multiplicity="*" />
+        </Association>
+        <Association Name="RoleUserRole">
+          <End Type="MER.Role" Role="Role" Multiplicity="1" />
+          <End Type="MER.UserRole" Role="UserRole" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Role">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="UserRole">
+              <PropertyRef Name="RoleId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FormFormModule">
+          <End Type="MER.Form" Role="Form" Multiplicity="1" />
+          <End Type="MER.FormModule" Role="FormModule" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Form">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="FormModule">
+              <PropertyRef Name="FormId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="ModuleFormModule">
+          <End Type="MER.Module" Role="Module" Multiplicity="1" />
+          <End Type="MER.FormModule" Role="FormModule" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Module">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="FormModule">
+              <PropertyRef Name="ModuleId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="RoleRoleFormPermission">
+          <End Type="MER.Role" Role="Role" Multiplicity="1" />
+          <End Type="MER.RoleFormPermission" Role="RoleFormPermission" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Role">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="RoleFormPermission">
+              <PropertyRef Name="RoleId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FormRoleFormPermission">
+          <End Type="MER.Form" Role="Form" Multiplicity="1" />
+          <End Type="MER.RoleFormPermission" Role="RoleFormPermission" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Form">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="RoleFormPermission">
+              <PropertyRef Name="FormId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="PermissionRoleFormPermission">
+          <End Type="MER.Permission" Role="Permission" Multiplicity="1" />
+          <End Type="MER.RoleFormPermission" Role="RoleFormPermission" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Permission">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="RoleFormPermission">
+              <PropertyRef Name="PermissionId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <EntityType Name="OperatingGroup">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Name" Type="String" Nullable="false" />
+          <Property Name="DateStart" Type="String" Nullable="false" />
+          <Property Name="DateEnd" Type="String" Nullable="false" />
+          <NavigationProperty Name="User" Relationship="MER.User_Area_ManagerOperationalGroup" FromRole="OperationalGroup" ToRole="User" />
+          <Property Name="Active" Type="String" Nullable="false" />
+          <Property Name="UserId" Type="String" Nullable="false" />
+          <NavigationProperty Name="Operating" Relationship="MER.OperationalGroupOperating" FromRole="OperationalGroup" ToRole="Operating" />
+          <NavigationProperty Name="Inventary" Relationship="MER.OperationalGroupInventary" FromRole="OperationalGroup" ToRole="Inventary" />
+        </EntityType>
+        <Association Name="User_Area_ManagerOperationalGroup">
+          <End Type="MER.User" Role="User" Multiplicity="1" />
+          <End Type="MER.OperatingGroup" Role="OperationalGroup" Multiplicity="*" />
+        </Association>
+        <EntityType Name="Operating">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <NavigationProperty Name="User" Relationship="MER.UserOperating" FromRole="Operating" ToRole="User" />
+          <Property Name="Active" Type="String" Nullable="false" />
+          <Property Name="UserId" Type="String" Nullable="false" />
+          <NavigationProperty Name="OperationalGroup" Relationship="MER.OperationalGroupOperating" FromRole="Operating" ToRole="OperationalGroup" />
+          <Property Name="OperationalGroupId" Type="Int32" Nullable="false" />
+        </EntityType>
+        <Association Name="UserOperating">
+          <End Type="MER.User" Role="User" Multiplicity="1" />
+          <End Type="MER.Operating" Role="Operating" Multiplicity="*" />
+        </Association>
+        <Association Name="OperationalGroupOperating">
+          <End Type="MER.OperatingGroup" Role="OperationalGroup" Multiplicity="1" />
+          <End Type="MER.Operating" Role="Operating" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="OperationalGroup">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="Operating">
+              <PropertyRef Name="OperationalGroupId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <EntityType Name="Inventary">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Date" Type="Int16" Nullable="false" />
+          <Property Name="Observations" Type="String" Nullable="false" />
+          <Property Name="Active" Type="String" Nullable="false" />
+          <NavigationProperty Name="Zone" Relationship="MER.ZoneInventary" FromRole="Inventary" ToRole="Zone" />
+          <Property Name="ZoneId" Type="Int32" Nullable="false" />
+          <NavigationProperty Name="OperationalGroup" Relationship="MER.OperationalGroupInventary" FromRole="Inventary" ToRole="OperationalGroup" />
+          <Property Name="OperationalGroupId" Type="Int32" Nullable="false" />
+          <NavigationProperty Name="InventaryDetails" Relationship="MER.InventaryInventaryDetails" FromRole="Inventary" ToRole="InventaryDetails" />
+          <NavigationProperty Name="Witness" Relationship="MER.WitnessInventary" FromRole="Inventary" ToRole="Witness" />
+          <Property Name="WitnessId" Type="Int32" Nullable="false" />
+          <NavigationProperty Name="Verification" Relationship="MER.InventaryVerification" FromRole="Inventary" ToRole="Verification" />
+        </EntityType>
+        <EntityType Name="Company">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Name" Type="String" Nullable="false" />
+          <Property Name="NIT" Type="String" Nullable="false" />
+          <Property Name="Email" Type="String" Nullable="false" />
+          <Property Name="Active" Type="String" Nullable="false" />
+          <NavigationProperty Name="Branch" Relationship="MER.CompanyBranch" FromRole="Company" ToRole="Branch" />
+          <NavigationProperty Name="User" Relationship="MER.UserCompany" FromRole="Company" ToRole="User" />
+          <Property Name="UserId" Type="String" Nullable="false" />
+        </EntityType>
+        <EntityType Name="Branch">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Name" Type="String" Nullable="false" />
+          <Property Name="Address" Type="String" Nullable="false" />
+          <Property Name="Phone" Type="String" Nullable="false" />
+          <NavigationProperty Name="User" Relationship="MER.UserBranch" FromRole="Branch" ToRole="User" />
+          <Property Name="CompanyId" Type="Int32" Nullable="false" />
+          <Property Name="UserId" Type="Int32" Nullable="false" />
+          <NavigationProperty Name="Company" Relationship="MER.CompanyBranch" FromRole="Branch" ToRole="Company" />
+          <Property Name="Active" Type="String" Nullable="false" />
+          <NavigationProperty Name="Zone" Relationship="MER.BranchZone" FromRole="Branch" ToRole="Zone" />
+        </EntityType>
+        <EntityType Name="Zone">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Name" Type="String" Nullable="false" />
+          <Property Name="Description" Type="String" Nullable="false" />
+          <Property Name="State" Type="String" Nullable="false" />
+          <NavigationProperty Name="Branch" Relationship="MER.BranchZone" FromRole="Zone" ToRole="Branch" />
+          <Property Name="Active" Type="String" Nullable="false" />
+          <Property Name="BranchId" Type="Int32" Nullable="false" />
+          <NavigationProperty Name="User" Relationship="MER.UserZone" FromRole="Zone" ToRole="User" />
+          <Property Name="UserId" Type="String" Nullable="false" />
+          <NavigationProperty Name="Inventary" Relationship="MER.ZoneInventary" FromRole="Zone" ToRole="Inventary" />
+          <NavigationProperty Name="Item" Relationship="MER.ZoneItem" FromRole="Zone" ToRole="Item" />
+        </EntityType>
+        <Association Name="UserBranch">
+          <End Type="MER.User" Role="User" Multiplicity="1" />
+          <End Type="MER.Branch" Role="Branch" Multiplicity="1" />
+          <ReferentialConstraint>
+            <Principal Role="User">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="Branch">
+              <PropertyRef Name="UserId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="CompanyBranch">
+          <End Type="MER.Company" Role="Company" Multiplicity="1" />
+          <End Type="MER.Branch" Role="Branch" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Company">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="Branch">
+              <PropertyRef Name="CompanyId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="BranchZone">
+          <End Type="MER.Branch" Role="Branch" Multiplicity="1" />
+          <End Type="MER.Zone" Role="Zone" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Branch">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="Zone">
+              <PropertyRef Name="BranchId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="UserZone">
+          <End Type="MER.User" Role="User" Multiplicity="1" />
+          <End Type="MER.Zone" Role="Zone" Multiplicity="1" />
+        </Association>
+        <Association Name="ZoneInventary">
+          <End Type="MER.Zone" Role="Zone" Multiplicity="1" />
+          <End Type="MER.Inventary" Role="Inventary" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Zone">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="Inventary">
+              <PropertyRef Name="ZoneId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="OperationalGroupInventary">
+          <End Type="MER.OperatingGroup" Role="OperationalGroup" Multiplicity="1" />
+          <End Type="MER.Inventary" Role="Inventary" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="OperationalGroup">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="Inventary">
+              <PropertyRef Name="OperationalGroupId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <EntityType Name="InventaryDetails">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <NavigationProperty Name="Inventary" Relationship="MER.InventaryInventaryDetails" FromRole="InventaryDetails" ToRole="Inventary" />
+          <Property Name="Active" Type="String" Nullable="false" />
+          <Property Name="InventaryId" Type="Int32" Nullable="false" />
+          <NavigationProperty Name="Item" Relationship="MER.ItemInventaryDetails" FromRole="InventaryDetails" ToRole="Item" />
+          <Property Name="ItemId" Type="Int32" Nullable="false" />
+          <NavigationProperty Name="StateItem" Relationship="MER.StateItemInventaryDetails" FromRole="InventaryDetails" ToRole="StateItem" />
+          <Property Name="StateItemId" Type="Int32" Nullable="false" />
+        </EntityType>
+        <Association Name="InventaryInventaryDetails">
+          <End Type="MER.Inventary" Role="Inventary" Multiplicity="1" />
+          <End Type="MER.InventaryDetails" Role="InventaryDetails" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Inventary">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="InventaryDetails">
+              <PropertyRef Name="InventaryId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <EntityType Name="Item">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Code" Type="String" Nullable="false" />
+          <Property Name="Name" Type="String" Nullable="false" />
+          <Property Name="Description" Type="String" Nullable="false" />
+          <NavigationProperty Name="CategoryItem" Relationship="MER.CategoryItemItem" FromRole="Item" ToRole="CategoryItem" />
+          <Property Name="CategoryItemId" Type="Int32" Nullable="false" />
+          <NavigationProperty Name="StateItem" Relationship="MER.StateItemItem" FromRole="Item" ToRole="StateItem" />
+          <Property Name="StateItemId" Type="Int32" Nullable="false" />
+          <Property Name="Active" Type="String" Nullable="false" />
+          <NavigationProperty Name="Zone" Relationship="MER.ZoneItem" FromRole="Item" ToRole="Zone" />
+          <Property Name="ZoneId" Type="Int32" Nullable="false" />
+          <NavigationProperty Name="InventaryDetails" Relationship="MER.ItemInventaryDetails" FromRole="Item" ToRole="InventaryDetails" />
+        </EntityType>
+        <EntityType Name="CategoryItem">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Name" Type="String" Nullable="false" />
+          <Property Name="Description" Type="String" Nullable="false" />
+          <Property Name="Active" Type="String" Nullable="false" />
+          <NavigationProperty Name="Item" Relationship="MER.CategoryItemItem" FromRole="CategoryItem" ToRole="Item" />
+        </EntityType>
+        <EntityType Name="StateItem">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Name" Type="String" Nullable="false" />
+          <Property Name="Description" Type="String" Nullable="false" />
+          <Property Name="Active" Type="String" Nullable="false" />
+          <NavigationProperty Name="Item" Relationship="MER.StateItemItem" FromRole="StateItem" ToRole="Item" />
+          <NavigationProperty Name="InventaryDetails" Relationship="MER.StateItemInventaryDetails" FromRole="StateItem" ToRole="InventaryDetails" />
+        </EntityType>
+        <EntityType Name="Witness">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Code" Type="String" Nullable="false" />
+          <NavigationProperty Name="Person" Relationship="MER.PersonWitness" FromRole="Witness" ToRole="Person" />
+          <Property Name="Active" Type="String" Nullable="false" />
+          <Property Name="PersonId" Type="Int32" Nullable="false" />
+          <NavigationProperty Name="Inventary" Relationship="MER.WitnessInventary" FromRole="Witness" ToRole="Inventary" />
+        </EntityType>
+        <Association Name="PersonWitness">
+          <End Type="MER.Person" Role="Person" Multiplicity="1" />
+          <End Type="MER.Witness" Role="Witness" Multiplicity="1" />
+          <ReferentialConstraint>
+            <Principal Role="Person">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="Witness">
+              <PropertyRef Name="PersonId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="WitnessInventary">
+          <End Type="MER.Witness" Role="Witness" Multiplicity="1" />
+          <End Type="MER.Inventary" Role="Inventary" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Witness">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="Inventary">
+              <PropertyRef Name="WitnessId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="CategoryItemItem">
+          <End Type="MER.CategoryItem" Role="CategoryItem" Multiplicity="1" />
+          <End Type="MER.Item" Role="Item" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="CategoryItem">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="Item">
+              <PropertyRef Name="CategoryItemId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="StateItemItem">
+          <End Type="MER.StateItem" Role="StateItem" Multiplicity="1" />
+          <End Type="MER.Item" Role="Item" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="StateItem">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="Item">
+              <PropertyRef Name="StateItemId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="ZoneItem">
+          <End Type="MER.Zone" Role="Zone" Multiplicity="1" />
+          <End Type="MER.Item" Role="Item" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Zone">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="Item">
+              <PropertyRef Name="ZoneId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="ItemInventaryDetails">
+          <End Type="MER.Item" Role="Item" Multiplicity="1" />
+          <End Type="MER.InventaryDetails" Role="InventaryDetails" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Item">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="InventaryDetails">
+              <PropertyRef Name="ItemId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <EntityType Name="Verification">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Result" Type="String" Nullable="false" />
+          <Property Name="Date" Type="String" Nullable="false" />
+          <Property Name="Observations" Type="String" Nullable="false" />
+          <NavigationProperty Name="Inventary" Relationship="MER.InventaryVerification" FromRole="Verification" ToRole="Inventary" />
+          <Property Name="Active" Type="String" Nullable="false" />
+          <Property Name="InventaryId" Type="Int32" Nullable="false" />
+          <NavigationProperty Name="User" Relationship="MER.UserVerification" FromRole="Verification" ToRole="User" />
+          <Property Name="UserId" Type="Int32" Nullable="false" />
+        </EntityType>
+        <Association Name="InventaryVerification">
+          <End Type="MER.Inventary" Role="Inventary" Multiplicity="1" />
+          <End Type="MER.Verification" Role="Verification" Multiplicity="1" />
+          <ReferentialConstraint>
+            <Principal Role="Inventary">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="Verification">
+              <PropertyRef Name="InventaryId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="UserVerification">
+          <End Type="MER.User" Role="User" Multiplicity="1" />
+          <End Type="MER.Verification" Role="Verification" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="User">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="Verification">
+              <PropertyRef Name="UserId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <EntityType Name="Notification">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Title" Type="String" Nullable="false" />
+          <Property Name="Type" Type="String" Nullable="false" />
+          <Property Name="Content" Type="String" Nullable="false" />
+          <Property Name="Date" Type="String" Nullable="false" />
+          <Property Name="Read" Type="String" Nullable="false" />
+          <Property Name="Active" Type="String" Nullable="false" />
+          <NavigationProperty Name="User" Relationship="MER.UserNotification" FromRole="Notification" ToRole="User" />
+          <Property Name="UserId" Type="Int32" Nullable="false" />
+        </EntityType>
+        <Association Name="UserNotification">
+          <End Type="MER.User" Role="User" Multiplicity="1" />
+          <End Type="MER.Notification" Role="Notification" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="User">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="Notification">
+              <PropertyRef Name="UserId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="UserCompany">
+          <End Type="MER.User" Role="User" Multiplicity="1" />
+          <End Type="MER.Company" Role="Company" Multiplicity="1" />
+        </Association>
+        <Association Name="StateItemInventaryDetails">
+          <End Type="MER.StateItem" Role="StateItem" Multiplicity="1" />
+          <End Type="MER.InventaryDetails" Role="InventaryDetails" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="StateItem">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="InventaryDetails">
+              <PropertyRef Name="StateItemId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs" Space="C-S">
+        <Alias Key="Model" Value="MER" />
+        <Alias Key="Target" Value="MER.Store" />
+        <EntityContainerMapping CdmEntityContainer="MERContainer" StorageEntityContainer="MERTargetContainer">
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <edmx:Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </edmx:Connection>
+    <edmx:Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="False" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="Ninguno" />
+      </DesignerInfoPropertySet>
+    </edmx:Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="e6e00edf212845f2b0c11e604433d3a0" Name="Diagram1">
+        <EntityTypeShape EntityType="MER.User" Width="1.5" PointX="3" PointY="12.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="MER.Person" Width="1.5" PointX="0.75" PointY="14.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="MER.Role" Width="1.5" PointX="6" PointY="7.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="MER.UserRole" Width="1.5" PointX="8.25" PointY="13.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="MER.Form" Width="1.5" PointX="14.75" PointY="3.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="MER.Module" Width="1.5" PointX="14.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="MER.FormModule" Width="1.5" PointX="17" PointY="3.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="MER.RoleFormPermission" Width="1.5" PointX="18" PointY="7.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="MER.Permission" Width="1.5" PointX="15.75" PointY="6.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="MER.Auditory" Width="1.5" PointX="0.75" PointY="1.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="MER.OperatingGroup" Width="1.5" PointX="5.25" PointY="12.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="MER.Operating" Width="1.5" PointX="7.5" PointY="10.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="MER.Inventary" Width="1.5" PointX="7.5" PointY="16.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="MER.Company" Width="1.5" PointX="5.25" PointY="16" IsExpanded="true" />
+        <EntityTypeShape EntityType="MER.Branch" Width="1.5" PointX="10.5" PointY="14.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="MER.Zone" Width="1.5" PointX="12.75" PointY="10.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="MER.InventaryDetails" Width="1.5" PointX="9.75" PointY="18" IsExpanded="true" />
+        <EntityTypeShape EntityType="MER.Item" Width="1.5" PointX="15" PointY="10.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="MER.CategoryItem" Width="1.5" PointX="12.75" PointY="7.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="MER.StateItem" Width="1.5" PointX="12.75" PointY="19.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="MER.Witness" Width="1.5" PointX="3" PointY="19.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="MER.Verification" Width="1.5" PointX="12.75" PointY="14.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="MER.Notification" Width="1.5" PointX="5.25" PointY="23" IsExpanded="true" />
+        <AssociationConnector Association="MER.PersonUser" ManuallyRouted="false" />
+        <AssociationConnector Association="MER.UserUserRole" ManuallyRouted="false" />
+        <AssociationConnector Association="MER.RoleUserRole" ManuallyRouted="false" />
+        <AssociationConnector Association="MER.FormFormModule" ManuallyRouted="false" />
+        <AssociationConnector Association="MER.ModuleFormModule" ManuallyRouted="false" />
+        <AssociationConnector Association="MER.RoleRoleFormPermission" ManuallyRouted="false" />
+        <AssociationConnector Association="MER.FormRoleFormPermission" ManuallyRouted="false" />
+        <AssociationConnector Association="MER.PermissionRoleFormPermission" ManuallyRouted="false" />
+        <AssociationConnector Association="MER.User_Area_ManagerOperationalGroup" ManuallyRouted="false" />
+        <AssociationConnector Association="MER.UserOperating" ManuallyRouted="false" />
+        <AssociationConnector Association="MER.OperationalGroupOperating" ManuallyRouted="false" />
+        <AssociationConnector Association="MER.UserBranch" ManuallyRouted="false" />
+        <AssociationConnector Association="MER.CompanyBranch" ManuallyRouted="false" />
+        <AssociationConnector Association="MER.BranchZone" ManuallyRouted="false" />
+        <AssociationConnector Association="MER.UserZone" ManuallyRouted="false" />
+        <AssociationConnector Association="MER.ZoneInventary" ManuallyRouted="false" />
+        <AssociationConnector Association="MER.OperationalGroupInventary" ManuallyRouted="false" />
+        <AssociationConnector Association="MER.InventaryInventaryDetails" ManuallyRouted="false" />
+        <AssociationConnector Association="MER.PersonWitness" ManuallyRouted="false" />
+        <AssociationConnector Association="MER.WitnessInventary" ManuallyRouted="false" />
+        <AssociationConnector Association="MER.CategoryItemItem" ManuallyRouted="false" />
+        <AssociationConnector Association="MER.StateItemItem" ManuallyRouted="false" />
+        <AssociationConnector Association="MER.ZoneItem" ManuallyRouted="false" />
+        <AssociationConnector Association="MER.ItemInventaryDetails" ManuallyRouted="false" />
+        <AssociationConnector Association="MER.InventaryVerification" ManuallyRouted="false" />
+        <AssociationConnector Association="MER.UserVerification" ManuallyRouted="false" />
+        <AssociationConnector Association="MER.UserNotification" ManuallyRouted="false" />
+        <AssociationConnector Association="MER.UserCompany" ManuallyRouted="false" />
+        <AssociationConnector Association="MER.StateItemInventaryDetails" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>
