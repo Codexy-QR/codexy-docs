@@ -1,0 +1,174 @@
+%%% -*-BibTeX-*-
+%%% Do NOT edit. File created by BibTeX with style
+%%% ACM-Reference-Format-Journals [18-Jan-2012].
+
+\begin{thebibliography}{13}
+
+%%% ====================================================================
+%%% NOTE TO THE USER: you can override these defaults by providing
+%%% customized versions of any of these macros before the \bibliography
+%%% command.  Each of them MUST provide its own final punctuation,
+%%% except for \shownote{} and \showURL{}.  The latter two
+%%% do not use final punctuation, in order to avoid confusing it with
+%%% the Web address.
+%%%
+%%% To suppress output of a particular field, define its macro to expand
+%%% to an empty string, or better, \unskip, like this:
+%%%
+%%% \newcommand{\showURL}[1]{\unskip}   % LaTeX syntax
+%%%
+%%% \def \showURL #1{\unskip}           % plain TeX syntax
+%%%
+%%% ====================================================================
+
+\ifx \showCODEN    \undefined \def \showCODEN     #1{\unskip}     \fi
+\ifx \showISBNx    \undefined \def \showISBNx     #1{\unskip}     \fi
+\ifx \showISBNxiii \undefined \def \showISBNxiii  #1{\unskip}     \fi
+\ifx \showISSN     \undefined \def \showISSN      #1{\unskip}     \fi
+\ifx \showLCCN     \undefined \def \showLCCN      #1{\unskip}     \fi
+\ifx \shownote     \undefined \def \shownote      #1{#1}          \fi
+\ifx \showarticletitle \undefined \def \showarticletitle #1{#1}   \fi
+\ifx \showURL      \undefined \def \showURL       {\relax}        \fi
+% The following commands are used for tagged output and should be
+% invisible to TeX
+\providecommand\bibfield[2]{#2}
+\providecommand\bibinfo[2]{#2}
+\providecommand\natexlab[1]{#1}
+\providecommand\showeprint[2][]{arXiv:#2}
+
+\bibitem[eur(2021)]%
+        {european2021monolito}
+ \bibinfo{year}{2021}\natexlab{}.
+\newblock \showarticletitle{De Monolito a Microservicios: Desafíos, Mejores
+  Prácticas y Perspectivas Futuras}.
+\newblock \bibinfo{journal}{\emph{European Journal of Advances in Engineering
+  and Technology}} (\bibinfo{year}{2021}).
+\newblock
+
+
+\bibitem[Decimavilla~Alarcón(2025)]%
+        {decimavilla2025arquitectura}
+\bibfield{author}{\bibinfo{person}{J. Decimavilla~Alarcón}.}
+  \bibinfo{year}{2025}\natexlab{}.
+\newblock \showarticletitle{Arquitectura de microservicios basada en
+  contenedores para despliegue ágil de aplicaciones IoT en la nube}.
+\newblock \bibinfo{journal}{\emph{Episteme y Praxis}} (\bibinfo{year}{2025}).
+\newblock
+
+
+\bibitem[Forsgren et~al\mbox{.}(2018)]%
+        {forsgren2018accelerate}
+\bibfield{author}{\bibinfo{person}{Nicole Forsgren}, \bibinfo{person}{Jez
+  Humble}, {and} \bibinfo{person}{Gene Kim}.} \bibinfo{year}{2018}\natexlab{}.
+\newblock \showarticletitle{Accelerate: The Science of Lean Software and
+  DevOps}.
+\newblock \bibinfo{journal}{\emph{IT Revolution}} (\bibinfo{year}{2018}).
+\newblock
+
+
+\bibitem[Jain et~al\mbox{.}(2021)]%
+        {jain2021analisis}
+\bibfield{author}{\bibinfo{person}{V. Jain} {et~al\mbox{.}}}
+  \bibinfo{year}{2021}\natexlab{}.
+\newblock \showarticletitle{Análisis Estático de Vulnerabilidades de
+  Imágenes de Docker}. In \bibinfo{booktitle}{\emph{IOP Conference Series:
+  Materials Science and Engineering}}.
+\newblock
+
+
+\bibitem[Jimenez-Torres et~al\mbox{.}(2014)]%
+        {jimenez2014lenguajes}
+\bibfield{author}{\bibinfo{person}{V.~H. Jimenez-Torres}, \bibinfo{person}{W.
+  Tello-Borja}, {and} \bibinfo{person}{J.~I. Rios-Patiño}.}
+  \bibinfo{year}{2014}\natexlab{}.
+\newblock \showarticletitle{Lenguajes de Patrones de Arquitectura de Software:
+  Una Aproximación Al Estado del Arte}.
+\newblock  (\bibinfo{year}{2014}).
+\newblock
+
+
+\bibitem[Paez~Navarro(2023)]%
+        {paez2023soluciones}
+\bibfield{author}{\bibinfo{person}{J.~A. Paez~Navarro}.}
+  \bibinfo{year}{2023}\natexlab{}.
+\newblock \showarticletitle{Soluciones de Software en el Contexto de la
+  Transformación Digital}.
+\newblock \bibinfo{journal}{\emph{Universidad Cooperativa de Colombia}}
+  (\bibinfo{year}{2023}).
+\newblock
+
+
+\bibitem[Parra~Angel and Fuentes~Rojas(2022)]%
+        {parra2022desarrollo}
+\bibfield{author}{\bibinfo{person}{S. Parra~Angel} {and} \bibinfo{person}{E.~A.
+  Fuentes~Rojas}.} \bibinfo{year}{2022}\natexlab{}.
+\newblock \showarticletitle{Desarrollo de un Sistema de Gestión de Inventarios
+  para el Control de Materiales}.
+\newblock \bibinfo{journal}{\emph{Ingeniería y Región}}
+  (\bibinfo{year}{2022}).
+\newblock
+
+
+\bibitem[Peñalver~Higuera and Isea-Argüelles(2024)]%
+        {penalver2024transformacion}
+\bibfield{author}{\bibinfo{person}{M.~J. Peñalver~Higuera} {and}
+  \bibinfo{person}{J.~J. Isea-Argüelles}.} \bibinfo{year}{2024}\natexlab{}.
+\newblock \showarticletitle{Transformación Hacia Fábricas Inteligentes: El
+  Papel de la IA en la Industria 4.0}.
+\newblock  (\bibinfo{year}{2024}).
+\newblock
+
+
+\bibitem[Reina~Guaña(2021)]%
+        {reina2021modelo}
+\bibfield{author}{\bibinfo{person}{E. Reina~Guaña}.}
+  \bibinfo{year}{2021}\natexlab{}.
+\newblock \showarticletitle{Modelo de un Plan Estratégico Green IT Y BPM para
+  Minimizar el Impacto Ambiental en la Educación Superior}.
+\newblock  (\bibinfo{year}{2021}).
+\newblock
+
+
+\bibitem[Rodríguez et~al\mbox{.}(2024)]%
+        {rodriguez2024estado}
+\bibfield{author}{\bibinfo{person}{I. Rodríguez}, \bibinfo{person}{J. Rubio},
+  {and} \bibinfo{person}{G. Budiño}.} \bibinfo{year}{2024}\natexlab{}.
+\newblock \showarticletitle{Estado de Situación de los Procesos de
+  Transformación Digital en las Empresas Uruguayas}.
+\newblock \bibinfo{journal}{\emph{Revista Gestión Libre}}
+  (\bibinfo{year}{2024}).
+\newblock
+
+
+\bibitem[Sánchez(2023)]%
+        {sanchez2023principios}
+\bibfield{author}{\bibinfo{person}{G. Sánchez}.}
+  \bibinfo{year}{2023}\natexlab{}.
+\newblock \showarticletitle{Principios SOLID en la Automatización de Pruebas
+  de Software para Interfaces de Usuario Web con Selenium WebDriver y Java}.
+\newblock \bibinfo{journal}{\emph{Revista Politécnica}}
+  (\bibinfo{year}{2023}).
+\newblock
+
+
+\bibitem[Tetteh(2024)]%
+        {tetteh2024estudio}
+\bibfield{author}{\bibinfo{person}{S.~G. Tetteh}.}
+  \bibinfo{year}{2024}\natexlab{}.
+\newblock \showarticletitle{Estudio Empírico de Metodologías Ágiles de
+  Desarrollo de Software: Un Análisis Comparativo}.
+\newblock  (\bibinfo{year}{2024}).
+\newblock
+
+
+\bibitem[Wendler and Streitferdt(2014)]%
+        {wendler2014impacto}
+\bibfield{author}{\bibinfo{person}{S. Wendler} {and} \bibinfo{person}{D.
+  Streitferdt}.} \bibinfo{year}{2014}\natexlab{}.
+\newblock \showarticletitle{El Impacto de los Patrones de Interfaz de Usuario
+  en la Calidad de la Arquitectura de Software}.
+\newblock  (\bibinfo{year}{2014}).
+\newblock
+
+
+\end{thebibliography}

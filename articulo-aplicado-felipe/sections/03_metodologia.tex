@@ -1,0 +1,49 @@
+\section{Metodología}
+Para armar Codexy, no nos sentamos a escribir código a lo loco esperando que funcionara por arte de magia. Si algo se aprende rápido en esto, es que el software se parece más a construir un edificio que a cocinar algo rápido: si los cimientos están mal, todo se cae al primer problema. En esta parte, vamos a abrir el ``capó'' del proyecto para ver cómo unimos todas las piezas, desde la forma de trabajo hasta cómo viaja un bit de información por el sistema.
+
+\subsection{Metodología de Desarrollo: Manejando los Cambios}
+Lo primero fue decidir cómo trabajar. En proyectos grandes como este, donde el cliente (la institución) cambia de opinión o descubre nuevos problemas en la bodega de un día para otro, usar métodos viejos y rígidos como la cascada es un suicidio. Por eso nos fuimos por un enfoque Ágil.
+
+Como señala Tetteh (2024) en su comparación de metodologías, modelos como Scrum o XP son vitales hoy porque nos dan cintura para movernos. En lugar de gastar seis meses escribiendo documentos antes de programar, trabajamos en ciclos cortos o ``Sprints''. Esto nos dejó avanzar rápido: hacíamos una función (como ``Asignar Encargado''), se la mostrábamos al usuario, nos daban feedback (``este botón es muy chico'', ``falta este dato'') y lo arreglábamos en el siguiente ciclo. Esa capacidad de adaptación es lo que asegura que el software final sirva de verdad y no sea solo un adorno tecnológico.
+
+\subsection{Arquitectura del Backend: El Cerebro (.NET 9)}
+Hoy todo el mundo habla de ``microservicios'' como la solución mágica. Y es cierto, como leímos en Decimavilla Alarcón (2025), te dejan escalar increíblemente y si falla una parte, no se cae todo. Pero, siendo realistas, montar eso trae una complejidad tremenda: redes, latencias y configuraciones difíciles.
+
+Todo el mundo hoy habla de ``microservicios'' como si fueran la solución mágica para todo. Y es cierto, como leímos en la investigación de Decimavilla Alarcón (2025), los microservicios permiten escalar de forma brutal y aislar fallos (si se cae el módulo de pagos, no se cae el de inventario). Pero, siendo realistas, pasar de un monolito a microservicios trae una complejidad operativa inmensa: hay que gestionar latencias de red, trazas distribuidas y gestionadas.
+
+Para Codexy, tomamos una decisión práctica: hicimos un monolito, pero modular, usando Clean Architecture. Usamos patrones para dividir el código en capas clara:
+
+\subsubsection{Capas de la Arquitectura}
+• Capa Data: Aquí viven las entidades (Empresa, Zona, Item) y las reglas que no cambian.
+
+• Capa de Entity: Donde nos conectamos con la base de datos SQL Server usando Entity Framework Core.
+
+• Capa Business: Donde ocurre la magia de los casos de uso.
+
+• Capa Web Controllers: La API REST que habla con el mundo exterior.
+
+Esta estructura nos deja resolver problemas rápido y con calidad, aprovechando lo que ya saben otros arquitectos, y nos deja el sistema listo para mantenlo a largo plazo sin complicarnos la vida con redes distribuidas por ahora.
+
+\subsection{El Viaje del Dato: Un Ejemplo Real}
+Para que se entienda mejor, sigamos el camino de un dato. Imaginen que un operativo escanea una silla:
+
+1. Captura: La cámara del celular lee el QR y saca el CODE.
+
+2. Procesamiento Local: La app revisa el formato y arma un JSON que guarda temporalmente.
+
+3. Transmisión: Cuando se confirma, manda una petición segura a la API en .NET 9.
+
+4. Validación: El servidor recibe la petición y revisa si el usuario tiene permiso para hacer eso.
+
+5. Persistencia: Si todo está bien, se guarda el cambio en la base de datos SQL Server.
+
+6. Notificación: Al instante, SignalR avisa a todos los conectados.
+
+7. Visualización: En el inicio del operativo, el listado de zonas se actualiza marcando la zona recién confirmada en un estado de ``Verificación'' sin necesidad de refrescar la vista.
+
+Todo este ciclo ocurre en fracciones de segundo, integrando tecnologías de la nube y dispositivos conectados para mejorar el rendimiento operativo.
+
+\subsection{Calidad y Seguridad: Blindando el Código}
+De nada sirve ser rápidos si el sistema es inseguro. Para la seguridad, usamos JWT (JSON Web Tokens). Básicamente, el servidor no gasta memoria guardando sesiones; cada petición trae su propia ``credencial'' firmada, lo que hace al sistema muy eficiente. Además, pensando en usar Docker a futuro, hacemos análisis de vulnerabilidades: escaneamos el código antes de compilar para tapar huecos de seguridad antes de que sea tarde.
+
+Y para la calidad, usamos Selenium para pruebas automáticas, pero con orden. Aplicamos principios SOLID incluso en los tests. Como explica Sánchez Gilberto (2023), aplicar reglas como la Responsabilidad Única en las pruebas hace que mantenerlas sea posible. Si cambiamos algo en el login, solo tocamos un archivo de prueba, no quinientos. Esto nos da confianza para hacer cambios grandes sabiendo que, si rompemos algo, los robots de prueba nos avisan al momento.

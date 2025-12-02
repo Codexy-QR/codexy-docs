@@ -1,0 +1,34 @@
+\section{Marco teórico y estado del arte}
+Para entender por qué Codexy está construido como está, primero tenemos ver qué pasa realmente ``detrás de cámaras'' en el desarrollo de software. No se trata solo de sentarse a escribir código a lo loco, sino de elegir las piezas correctas para que el sistema no se caiga cuando empiece a crecer. Es como construir un edificio: puedes usar ladrillos baratos y terminar rápido, o puedes diseñar una estructura sólida que aguante hasta un temblor.
+
+\subsection{La Evolución de la Arquitectura: De Bloques Pesados a la Agilidad}
+Hasta hace no mucho, el estándar de la industria era construir aplicaciones ``monolíticas''. Imagina un bloque gigante de cemento donde todo —la base de datos, la interfaz de usuario, la lógica de negocio— está mezclado y pegado. Si querías cambiar una ventanita, debías tener un cuidado tremendo para no romper los cimientos. Como explican muy bien en el análisis sobre la transición de monolitos a microservicios (European Journal of Advances in Engineering and Technology, 2021), este modelo viejo se vuelve una pesadilla logística: es difícil de escalar, si falla una parte crítica se cae toda la aplicación, y el proceso de actualización es lento y doloroso.
+
+Por eso, hoy en día casi todas las charlas técnicas giran en torno a los microservicios. La filosofía aquí es romper ese bloque en piezas pequeñas e independientes que se comunican entre sí. Esto es genial porque, como menciona Decimavilla Alarcón (2025) en su estudio sobre contenedores y IoT, te permite una escalabilidad brutal: puedes darle más potencia solo al servicio que lo necesita y bajar los costos operativos hasta un 60\%. Además, si un microservicio falla, el resto del sistema sigue vivo, lo que se conoce como aislamiento de fallos.
+
+Pero ojo, aquí viene el ``pero'' que muchos ignoran por moda. Aunque los microservicios suenan increíbles, montarlos es técnicamente muy complejo. Tienes que manejar redes entre servicios, latencias, transacciones distribuidas y un despliegue mucho más difícil. Para Codexy, no nos lanzamos ciegamente a los microservicios. Buscamos un equilibrio inteligente: una Clean Architecture (Arquitectura Limpia) sobre .NET 9.
+
+Esta arquitectura nos permite dividir el código en capas lógicas (Entity, Data, Business y Web Controllers) sin la necesidad de gestionar una red distribuida de servidores desde el día uno. Mantenemos el orden y la modularidad —preparados para migrar a microservicios en el futuro si es necesario— pero con la simplicidad operativa de un despliegue unificado. Es lo mejor de los dos mundos para la etapa actual del proyecto.
+
+\subsection{No Reinventar la Rueda: El Poder de los Patrones}
+A veces, los desarrolladores jóvenes caemos en la trampa del ego: queremos inventar soluciones ``únicas'' para todo. Pero la realidad es que la mayoría de los problemas de diseño ya los resolvieron expertos hace décadas. Aquí es donde entran los Lenguajes de Patrones de Arquitectura de Software.
+
+Según Jimenez-Torres et al. (2014), los patrones no son reglas aburridas que te limitan, sino un ``kit de herramientas'' probado y validado. Son soluciones reutilizables que te dicen: ``Hey, si tienes este problema de comunicación entre capas, usa esta estructura''. Al usar estos patrones en Codexy (como el patrón Repositorio para acceder a datos o la Inyección de Dependencias), no estamos adivinando; estamos construyendo sobre la experiencia acumulada de miles de arquitectos.
+
+\subsection{La Cara del Software: Patrones de Interfaz (UI)}
+Tampoco podemos olvidarnos de lo que ve el usuario. Mucha gente cree que el ``Frontend'' es solo poner botones bonitos y colores, pero hay una ingeniería compleja detrás. Aplicamos lo que Wendler y Streitferdt (2014) definen en su investigación sobre Patrones de Interfaz de Usuario (UIPs), nos muestran que usar patrones en la interfaz es clave para la eficiencia.
+
+En Codexy, que tiene tanto una web administrativa como una app móvil para operativos, la consistencia es vital. Los UIPs nos dejan reutilizar diseños. En lugar de programar cada pantalla o formulario desde cero (``escribir código a mano''), configuramos instancias de patrones ya probados. Esto reduce la complejidad drásticamente. Si un operativo aprende a usar el escáner QR en una pantalla, ya sabe usarlo en todas, porque el patrón de interacción es el mismo. Esto no solo acelera nuestro trabajo como desarrolladores, sino que mejora la curva de aprendizaje del usuario final, algo crítico cuando tienes rotación de personal en bodegas.
+
+\subsection{Calidad Blindada: Principios SOLID y Automatización}
+Para cerrar la parte técnica, hay que hablar de cómo evitamos que el software se rompa. Aquí es donde aplicamos los principios SOLID, una base teórica fundamental propuesta por Robert C. Martin, específicamente aplicada a nuestras pruebas automatizadas con Selenium.
+
+Sánchez Gilberto (2023), aplicar SOLID no es solo para el código del producto, sino también para el código de prueba.
+
+\subsubsection{Responsabilidad Única (SRP)}
+Nos aseguramos de que cada prueba verifique una sola cosa. Si una prueba falla, sabemos exactamente qué se rompió, sin tener que adivinar entre diez posibilidades.
+
+\subsubsection{Abierto/Cerrado (OCP)}
+Diseñamos nuestros tests para que sean fáciles de extender sin tocar el código que ya funciona.
+
+Esto hace que nuestro desarrollo sea mucho más rápido. Encontramos los errores (bugs) antes de salir a producción, ahorramos dinero en mantenimiento y nos evitamos el pánico de que el sistema falle en medio de un inventario real. Es trabajar con disciplina para que Codexy sea robusto hoy y mañana.

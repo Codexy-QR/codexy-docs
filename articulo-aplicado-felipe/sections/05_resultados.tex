@@ -1,0 +1,19 @@
+\section{Resultados}
+Después de pasar horas frente a la pantalla armando la arquitectura y tirando código en .NET 9, ver a Codexy funcionando en la vida real es otra cosa. Una cosa es lo que planeas en el papel y otra muy distinta es ver cómo se comporta el sistema cuando alguien intenta escanear un QR con las manos sucias en una bodega donde apenas llega la señal. Los resultados nos mostraron que las decisiones que tomamos no fueron por gusto, sino pura estrategia que funcionó.
+
+\subsection{Eficiencia Operativa: Del Caos a la Inmediatez}
+Lo más impresionante fue ver cómo desaparecieron las esperas. Gracias a la integración de SignalR, logramos algo que con las hojas de cálculo era imposible: inmediatez.
+
+• Antes: En la oficina central sufrían de ``ceguera de inventario''. Tenían que esperar a que el encargado mandara un correo al final del día (o de la semana) para enterarse de qué había pasado.
+
+• Ahora: En el segundo exacto en que un operativo escanea un ítem en la bodega, el panel del administrador se actualiza solo.
+
+Esta conexión en tiempo real confirma lo que dice Decimavilla Alarcón (2025) sobre los sistemas conectados en la nube. Sin gastar una millonada en sensores raros, convertimos el celular en una herramienta inteligente que elimina tiempos muertos. Vimos que auditorías que antes tomaban días juntando varios Excel, ahora son una consulta de un segundo. Básicamente, le devolvimos el control del tiempo a la empresa.
+
+\subsection{Seguridad Activa: Un Muro contra el Error}
+En seguridad, los resultados fueron contundentes. Al usar JWT y separar bien los roles (el que opera solo registra, el que verifica solo valida), se acabaron esos ``cambios misteriosos'' que pasaban cuando todo el mundo usaba la misma contraseña del archivo de Excel.
+
+Además, siguiendo los consejos de Jain sobre vulnerabilidades, escaneamos el código antes de subirlo. Encontramos y arreglamos problemas en las librerías antes de que fueran un dolor de cabeza real. El resultado es un sistema que nace ``sano'', protegiendo los datos no solo de hackers externos, sino de los propios errores internos o malas prácticas de los usuarios.
+
+\subsection{Validación de la Arquitectura Limpia}
+Por último, desde el lado de ingeniería, la Clean Architecture demostró por qué vale la pena. Cuando el cliente nos pidió cambiar cómo se calculaban los reportes a mitad del camino, pudimos hacerlo tocando solo la capa de lógica sin romper la API ni la base de datos. Si hubiéramos tenido todo mezclado como ``código espagueti'', ese cambio nos habría costado días de trabajo extra y refactorización. Esto prueba la teoría de Jimenez-Torres et al. (2014) sobre usar buenos patrones: una estructura ordenada te da velocidad para reaccionar. El sistema no solo es rápido para el usuario, también lo es para nosotros como desarrolladores cuando hay que mejorarlo.

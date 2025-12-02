@@ -1,0 +1,95 @@
+This is BibTeX, Version 0.99d (TeX Live 2025)
+Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
+The top-level auxiliary file: main_acm.aux
+The style file: ACM-Reference-Format.bst
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated wiz_functions (elt_size=4) to 6000 items from 3000.
+Database file #1: references.bib
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated wiz_functions (elt_size=4) to 9000 items from 6000.
+Warning--no key, author, or editor in european2021monolito
+Warning--no author, editor, organization, or key in european2021monolito
+Warning--to sort, need author, editor, or key in european2021monolito
+Reallocated glb_str_ptr (elt_size=4) to 20 items from 10.
+Reallocated global_strs (elt_size=200001) to 20 items from 10.
+Reallocated glb_str_end (elt_size=4) to 20 items from 10.
+Warning--no key, author, or editor in european2021monolito
+Warning--no key, author, or editor in european2021monolito
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Warning--no key, author, or editor in european2021monolito
+Warning--neither author and editor supplied for european2021monolito
+Warning--no number and no volume in european2021monolito
+Warning--page numbers missing in both pages and numpages fields in european2021monolito
+Warning--no number and no volume in decimavilla2025arquitectura
+Warning--page numbers missing in both pages and numpages fields in decimavilla2025arquitectura
+Warning--no number and no volume in forsgren2018accelerate
+Warning--page numbers missing in both pages and numpages fields in forsgren2018accelerate
+Warning--empty publisher in jain2021analisis
+Warning--empty address in jain2021analisis
+Warning--page numbers missing in both pages and numpages fields in jain2021analisis
+Warning--no journal in jimenez2014lenguajes
+Warning--no number and no volume in jimenez2014lenguajes
+Warning--page numbers missing in both pages and numpages fields in jimenez2014lenguajes
+Warning--no number and no volume in paez2023soluciones
+Warning--page numbers missing in both pages and numpages fields in paez2023soluciones
+Warning--no number and no volume in parra2022desarrollo
+Warning--page numbers missing in both pages and numpages fields in parra2022desarrollo
+Warning--no journal in penalver2024transformacion
+Warning--no number and no volume in penalver2024transformacion
+Warning--page numbers missing in both pages and numpages fields in penalver2024transformacion
+Warning--no journal in reina2021modelo
+Warning--no number and no volume in reina2021modelo
+Warning--page numbers missing in both pages and numpages fields in reina2021modelo
+Warning--no number and no volume in rodriguez2024estado
+Warning--page numbers missing in both pages and numpages fields in rodriguez2024estado
+Warning--no number and no volume in sanchez2023principios
+Warning--page numbers missing in both pages and numpages fields in sanchez2023principios
+Warning--no journal in tetteh2024estudio
+Warning--no number and no volume in tetteh2024estudio
+Warning--page numbers missing in both pages and numpages fields in tetteh2024estudio
+Warning--no journal in wendler2014impacto
+Warning--no number and no volume in wendler2014impacto
+Warning--page numbers missing in both pages and numpages fields in wendler2014impacto
+You've used 13 entries,
+            6273 wiz_defined-function locations,
+            1569 strings with 20169 characters,
+and the built_in function-call counts, 11779 in all, are:
+= -- 1555
+> -- 302
+< -- 0
++ -- 95
+- -- 118
+* -- 736
+:= -- 1100
+add.period$ -- 63
+call.type$ -- 13
+change.case$ -- 73
+chr.to.int$ -- 13
+cite$ -- 56
+duplicate$ -- 1091
+empty$ -- 802
+format.name$ -- 142
+if$ -- 2980
+int.to.chr$ -- 2
+int.to.str$ -- 1
+missing$ -- 53
+newline$ -- 142
+num.names$ -- 84
+pop$ -- 523
+preamble$ -- 1
+purify$ -- 177
+quote$ -- 0
+skip$ -- 321
+stack$ -- 0
+substring$ -- 685
+swap$ -- 48
+text.length$ -- 0
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 222
+warning$ -- 39
+while$ -- 72
+width$ -- 0
+write$ -- 270
+(There were 39 warnings)

@@ -1,0 +1,375 @@
+% $ biblatex auxiliary file $
+% $ biblatex bbl format version 3.3 $
+% Do not modify the above lines!
+%
+% This is an auxiliary file used by the 'biblatex' package.
+% This file may safely be deleted. It will be recreated by
+% biber as required.
+%
+\begingroup
+\makeatletter
+\@ifundefined{ver@biblatex.sty}
+  {\@latex@error
+     {Missing 'biblatex' package}
+     {The bibliography requires the 'biblatex' package.}
+      \aftergroup\endinput}
+  {}
+\endgroup
+
+
+\refsection{0}
+  \datalist[entry]{none/global//global/global/global}
+    \entry{forsgren2018accelerate}{article}{}{}
+      \name{author}{3}{}{%
+        {{hash=0dc9ac8a967e13c60fcfaedde74976f2}{%
+           family={Forsgren},
+           familyi={F\bibinitperiod},
+           given={Nicole},
+           giveni={N\bibinitperiod}}}%
+        {{hash=9e89d796d06f74d6551850b1c3bff900}{%
+           family={Humble},
+           familyi={H\bibinitperiod},
+           given={Jez},
+           giveni={J\bibinitperiod}}}%
+        {{hash=8e1c949be5801a6f56b7ac5df47a58a9}{%
+           family={Kim},
+           familyi={K\bibinitperiod},
+           given={Gene},
+           giveni={G\bibinitperiod}}}%
+      }
+      \strng{namehash}{6182ff2ce3d65afe566932add04e4d0a}
+      \strng{fullhash}{b3a03bdb03f26ee6030a135e12ea135c}
+      \strng{fullhashraw}{b3a03bdb03f26ee6030a135e12ea135c}
+      \strng{bibnamehash}{b3a03bdb03f26ee6030a135e12ea135c}
+      \strng{authorbibnamehash}{b3a03bdb03f26ee6030a135e12ea135c}
+      \strng{authornamehash}{6182ff2ce3d65afe566932add04e4d0a}
+      \strng{authorfullhash}{b3a03bdb03f26ee6030a135e12ea135c}
+      \strng{authorfullhashraw}{b3a03bdb03f26ee6030a135e12ea135c}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{IT Revolution}
+      \field{title}{Accelerate: The Science of Lean Software and DevOps}
+      \field{year}{2018}
+    \endentry
+    \entry{decimavilla2025arquitectura}{article}{}{}
+      \name{author}{1}{}{%
+        {{hash=a11ee3460599b476a074268f9701ef76}{%
+           family={Decimavilla\bibnamedelima Alarcón},
+           familyi={D\bibinitperiod\bibinitdelim A\bibinitperiod},
+           given={J.},
+           giveni={J\bibinitperiod}}}%
+      }
+      \strng{namehash}{a11ee3460599b476a074268f9701ef76}
+      \strng{fullhash}{a11ee3460599b476a074268f9701ef76}
+      \strng{fullhashraw}{a11ee3460599b476a074268f9701ef76}
+      \strng{bibnamehash}{a11ee3460599b476a074268f9701ef76}
+      \strng{authorbibnamehash}{a11ee3460599b476a074268f9701ef76}
+      \strng{authornamehash}{a11ee3460599b476a074268f9701ef76}
+      \strng{authorfullhash}{a11ee3460599b476a074268f9701ef76}
+      \strng{authorfullhashraw}{a11ee3460599b476a074268f9701ef76}
+      \field{sortinit}{3}
+      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Episteme y Praxis}
+      \field{title}{Arquitectura de microservicios basada en contenedores para despliegue ágil de aplicaciones IoT en la nube}
+      \field{year}{2025}
+      \true{nocite}
+    \endentry
+    \entry{european2021monolito}{article}{}{}
+      \field{sortinit}{4}
+      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{European Journal of Advances in Engineering and Technology}
+      \field{title}{De Monolito a Microservicios: Desafíos, Mejores Prácticas y Perspectivas Futuras}
+      \field{year}{2021}
+      \true{nocite}
+    \endentry
+    \entry{jimenez2014lenguajes}{article}{}{}
+      \name{author}{3}{}{%
+        {{hash=9b651d6d6586420f79cd087be71ca031}{%
+           family={Jimenez-Torres},
+           familyi={J\bibinithyphendelim T\bibinitperiod},
+           given={V.\bibnamedelimi H.},
+           giveni={V\bibinitperiod\bibinitdelim H\bibinitperiod}}}%
+        {{hash=fd2435361a698cfce06289d1aeee37ad}{%
+           family={Tello-Borja},
+           familyi={T\bibinithyphendelim B\bibinitperiod},
+           given={W.},
+           giveni={W\bibinitperiod}}}%
+        {{hash=76fa96e59d67aef7184bd8b79b1807f9}{%
+           family={Rios-Patiño},
+           familyi={R\bibinithyphendelim P\bibinitperiod},
+           given={J.\bibnamedelimi I.},
+           giveni={J\bibinitperiod\bibinitdelim I\bibinitperiod}}}%
+      }
+      \strng{namehash}{9857f8602342dc71a91f78bbdec378e9}
+      \strng{fullhash}{c9085f7925dd44ebbf67912c035881bd}
+      \strng{fullhashraw}{c9085f7925dd44ebbf67912c035881bd}
+      \strng{bibnamehash}{c9085f7925dd44ebbf67912c035881bd}
+      \strng{authorbibnamehash}{c9085f7925dd44ebbf67912c035881bd}
+      \strng{authornamehash}{9857f8602342dc71a91f78bbdec378e9}
+      \strng{authorfullhash}{c9085f7925dd44ebbf67912c035881bd}
+      \strng{authorfullhashraw}{c9085f7925dd44ebbf67912c035881bd}
+      \field{sortinit}{5}
+      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Lenguajes de Patrones de Arquitectura de Software: Una Aproximación Al Estado del Arte}
+      \field{year}{2014}
+      \true{nocite}
+    \endentry
+    \entry{wendler2014impacto}{article}{}{}
+      \name{author}{2}{}{%
+        {{hash=fb0ef0af864d2dd63ad12d3e79b2b4e0}{%
+           family={Wendler},
+           familyi={W\bibinitperiod},
+           given={S.},
+           giveni={S\bibinitperiod}}}%
+        {{hash=a663971674da55e948a96d9a82f332cc}{%
+           family={Streitferdt},
+           familyi={S\bibinitperiod},
+           given={D.},
+           giveni={D\bibinitperiod}}}%
+      }
+      \strng{namehash}{3e1289a08a4ed71c891c21b43dc8fc90}
+      \strng{fullhash}{3e1289a08a4ed71c891c21b43dc8fc90}
+      \strng{fullhashraw}{3e1289a08a4ed71c891c21b43dc8fc90}
+      \strng{bibnamehash}{3e1289a08a4ed71c891c21b43dc8fc90}
+      \strng{authorbibnamehash}{3e1289a08a4ed71c891c21b43dc8fc90}
+      \strng{authornamehash}{3e1289a08a4ed71c891c21b43dc8fc90}
+      \strng{authorfullhash}{3e1289a08a4ed71c891c21b43dc8fc90}
+      \strng{authorfullhashraw}{3e1289a08a4ed71c891c21b43dc8fc90}
+      \field{sortinit}{6}
+      \field{sortinithash}{b33bc299efb3c36abec520a4c896a66d}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{El Impacto de los Patrones de Interfaz de Usuario en la Calidad de la Arquitectura de Software}
+      \field{year}{2014}
+      \true{nocite}
+    \endentry
+    \entry{sanchez2023principios}{article}{}{}
+      \name{author}{1}{}{%
+        {{hash=ae6ccac884e0755d857b5fd9e56a5659}{%
+           family={Sánchez},
+           familyi={S\bibinitperiod},
+           given={G.},
+           giveni={G\bibinitperiod}}}%
+      }
+      \strng{namehash}{ae6ccac884e0755d857b5fd9e56a5659}
+      \strng{fullhash}{ae6ccac884e0755d857b5fd9e56a5659}
+      \strng{fullhashraw}{ae6ccac884e0755d857b5fd9e56a5659}
+      \strng{bibnamehash}{ae6ccac884e0755d857b5fd9e56a5659}
+      \strng{authorbibnamehash}{ae6ccac884e0755d857b5fd9e56a5659}
+      \strng{authornamehash}{ae6ccac884e0755d857b5fd9e56a5659}
+      \strng{authorfullhash}{ae6ccac884e0755d857b5fd9e56a5659}
+      \strng{authorfullhashraw}{ae6ccac884e0755d857b5fd9e56a5659}
+      \field{sortinit}{7}
+      \field{sortinithash}{108d0be1b1bee9773a1173443802c0a3}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Revista Politécnica}
+      \field{title}{Principios SOLID en la Automatización de Pruebas de Software para Interfaces de Usuario Web con Selenium WebDriver y Java}
+      \field{year}{2023}
+      \true{nocite}
+    \endentry
+    \entry{tetteh2024estudio}{article}{}{}
+      \name{author}{1}{}{%
+        {{hash=ed9c92757e41b3312c3474196713f238}{%
+           family={Tetteh},
+           familyi={T\bibinitperiod},
+           given={S.\bibnamedelimi G.},
+           giveni={S\bibinitperiod\bibinitdelim G\bibinitperiod}}}%
+      }
+      \strng{namehash}{ed9c92757e41b3312c3474196713f238}
+      \strng{fullhash}{ed9c92757e41b3312c3474196713f238}
+      \strng{fullhashraw}{ed9c92757e41b3312c3474196713f238}
+      \strng{bibnamehash}{ed9c92757e41b3312c3474196713f238}
+      \strng{authorbibnamehash}{ed9c92757e41b3312c3474196713f238}
+      \strng{authornamehash}{ed9c92757e41b3312c3474196713f238}
+      \strng{authorfullhash}{ed9c92757e41b3312c3474196713f238}
+      \strng{authorfullhashraw}{ed9c92757e41b3312c3474196713f238}
+      \field{sortinit}{8}
+      \field{sortinithash}{a231b008ebf0ecbe0b4d96dcc159445f}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Estudio Empírico de Metodologías Ágiles de Desarrollo de Software: Un Análisis Comparativo}
+      \field{year}{2024}
+      \true{nocite}
+    \endentry
+    \entry{jain2021analisis}{inproceedings}{}{}
+      \true{moreauthor}
+      \true{morelabelname}
+      \name{author}{1}{}{%
+        {{hash=c18b060aad89086b4440e0950c7e1054}{%
+           family={Jain},
+           familyi={J\bibinitperiod},
+           given={V.},
+           giveni={V\bibinitperiod}}}%
+      }
+      \strng{namehash}{ea44695da3e53b669e1db0472e6db03a}
+      \strng{fullhash}{ea44695da3e53b669e1db0472e6db03a}
+      \strng{fullhashraw}{ea44695da3e53b669e1db0472e6db03a}
+      \strng{bibnamehash}{ea44695da3e53b669e1db0472e6db03a}
+      \strng{authorbibnamehash}{ea44695da3e53b669e1db0472e6db03a}
+      \strng{authornamehash}{ea44695da3e53b669e1db0472e6db03a}
+      \strng{authorfullhash}{ea44695da3e53b669e1db0472e6db03a}
+      \strng{authorfullhashraw}{ea44695da3e53b669e1db0472e6db03a}
+      \field{sortinit}{9}
+      \field{sortinithash}{0a5ebc79d83c96b6579069544c73c7d4}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{IOP Conference Series: Materials Science and Engineering}
+      \field{title}{Análisis Estático de Vulnerabilidades de Imágenes de Docker}
+      \field{year}{2021}
+      \true{nocite}
+    \endentry
+    \entry{paez2023soluciones}{article}{}{}
+      \name{author}{1}{}{%
+        {{hash=eaef9783025034eca7276c5cbc6798ec}{%
+           family={Paez\bibnamedelima Navarro},
+           familyi={P\bibinitperiod\bibinitdelim N\bibinitperiod},
+           given={J.\bibnamedelimi A.},
+           giveni={J\bibinitperiod\bibinitdelim A\bibinitperiod}}}%
+      }
+      \strng{namehash}{eaef9783025034eca7276c5cbc6798ec}
+      \strng{fullhash}{eaef9783025034eca7276c5cbc6798ec}
+      \strng{fullhashraw}{eaef9783025034eca7276c5cbc6798ec}
+      \strng{bibnamehash}{eaef9783025034eca7276c5cbc6798ec}
+      \strng{authorbibnamehash}{eaef9783025034eca7276c5cbc6798ec}
+      \strng{authornamehash}{eaef9783025034eca7276c5cbc6798ec}
+      \strng{authorfullhash}{eaef9783025034eca7276c5cbc6798ec}
+      \strng{authorfullhashraw}{eaef9783025034eca7276c5cbc6798ec}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Universidad Cooperativa de Colombia}
+      \field{title}{Soluciones de Software en el Contexto de la Transformación Digital}
+      \field{year}{2023}
+      \true{nocite}
+    \endentry
+    \entry{parra2022desarrollo}{article}{}{}
+      \name{author}{2}{}{%
+        {{hash=44f5c0ab024c6a27d3b37979c09035d5}{%
+           family={Parra\bibnamedelima Angel},
+           familyi={P\bibinitperiod\bibinitdelim A\bibinitperiod},
+           given={S.},
+           giveni={S\bibinitperiod}}}%
+        {{hash=247bfa42e88b111e868dfcc77e4a3850}{%
+           family={Fuentes\bibnamedelima Rojas},
+           familyi={F\bibinitperiod\bibinitdelim R\bibinitperiod},
+           given={E.\bibnamedelimi A.},
+           giveni={E\bibinitperiod\bibinitdelim A\bibinitperiod}}}%
+      }
+      \strng{namehash}{0a03a87ecec2d04885a3f41daa165c34}
+      \strng{fullhash}{0a03a87ecec2d04885a3f41daa165c34}
+      \strng{fullhashraw}{0a03a87ecec2d04885a3f41daa165c34}
+      \strng{bibnamehash}{0a03a87ecec2d04885a3f41daa165c34}
+      \strng{authorbibnamehash}{0a03a87ecec2d04885a3f41daa165c34}
+      \strng{authornamehash}{0a03a87ecec2d04885a3f41daa165c34}
+      \strng{authorfullhash}{0a03a87ecec2d04885a3f41daa165c34}
+      \strng{authorfullhashraw}{0a03a87ecec2d04885a3f41daa165c34}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Ingeniería y Región}
+      \field{title}{Desarrollo de un Sistema de Gestión de Inventarios para el Control de Materiales}
+      \field{year}{2022}
+      \true{nocite}
+    \endentry
+    \entry{penalver2024transformacion}{article}{}{}
+      \name{author}{2}{}{%
+        {{hash=d8aaca5532fdc4b406d87795a2be8e38}{%
+           family={Peñalver\bibnamedelima Higuera},
+           familyi={P\bibinitperiod\bibinitdelim H\bibinitperiod},
+           given={M.\bibnamedelimi J.},
+           giveni={M\bibinitperiod\bibinitdelim J\bibinitperiod}}}%
+        {{hash=946ecd3b22b91b10a9a4e64efc7ea3c5}{%
+           family={Isea-Argüelles},
+           familyi={I\bibinithyphendelim A\bibinitperiod},
+           given={J.\bibnamedelimi J.},
+           giveni={J\bibinitperiod\bibinitdelim J\bibinitperiod}}}%
+      }
+      \strng{namehash}{9754a8497e87c8e434ecfdd5693cbeb2}
+      \strng{fullhash}{9754a8497e87c8e434ecfdd5693cbeb2}
+      \strng{fullhashraw}{9754a8497e87c8e434ecfdd5693cbeb2}
+      \strng{bibnamehash}{9754a8497e87c8e434ecfdd5693cbeb2}
+      \strng{authorbibnamehash}{9754a8497e87c8e434ecfdd5693cbeb2}
+      \strng{authornamehash}{9754a8497e87c8e434ecfdd5693cbeb2}
+      \strng{authorfullhash}{9754a8497e87c8e434ecfdd5693cbeb2}
+      \strng{authorfullhashraw}{9754a8497e87c8e434ecfdd5693cbeb2}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Transformación Hacia Fábricas Inteligentes: El Papel de la IA en la Industria 4.0}
+      \field{year}{2024}
+      \true{nocite}
+    \endentry
+    \entry{reina2021modelo}{article}{}{}
+      \name{author}{1}{}{%
+        {{hash=bc50e9029db30b3569e8b9bcc4364f2d}{%
+           family={Reina\bibnamedelima Guaña},
+           familyi={R\bibinitperiod\bibinitdelim G\bibinitperiod},
+           given={E.},
+           giveni={E\bibinitperiod}}}%
+      }
+      \strng{namehash}{bc50e9029db30b3569e8b9bcc4364f2d}
+      \strng{fullhash}{bc50e9029db30b3569e8b9bcc4364f2d}
+      \strng{fullhashraw}{bc50e9029db30b3569e8b9bcc4364f2d}
+      \strng{bibnamehash}{bc50e9029db30b3569e8b9bcc4364f2d}
+      \strng{authorbibnamehash}{bc50e9029db30b3569e8b9bcc4364f2d}
+      \strng{authornamehash}{bc50e9029db30b3569e8b9bcc4364f2d}
+      \strng{authorfullhash}{bc50e9029db30b3569e8b9bcc4364f2d}
+      \strng{authorfullhashraw}{bc50e9029db30b3569e8b9bcc4364f2d}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Modelo de un Plan Estratégico Green IT Y BPM para Minimizar el Impacto Ambiental en la Educación Superior}
+      \field{year}{2021}
+      \true{nocite}
+    \endentry
+    \entry{rodriguez2024estado}{article}{}{}
+      \name{author}{3}{}{%
+        {{hash=bbbff5267a28224f44ad2b47a58ebac5}{%
+           family={Rodríguez},
+           familyi={R\bibinitperiod},
+           given={I.},
+           giveni={I\bibinitperiod}}}%
+        {{hash=357e333bd23132f4908c43ce8d704f81}{%
+           family={Rubio},
+           familyi={R\bibinitperiod},
+           given={J.},
+           giveni={J\bibinitperiod}}}%
+        {{hash=6b740f48d24880e9b8a9d39076971806}{%
+           family={Budiño},
+           familyi={B\bibinitperiod},
+           given={G.},
+           giveni={G\bibinitperiod}}}%
+      }
+      \strng{namehash}{23b94b44f723046f5f1102c5e2098495}
+      \strng{fullhash}{e3a9b5bdeedb6984e4f5b3f6740544af}
+      \strng{fullhashraw}{e3a9b5bdeedb6984e4f5b3f6740544af}
+      \strng{bibnamehash}{e3a9b5bdeedb6984e4f5b3f6740544af}
+      \strng{authorbibnamehash}{e3a9b5bdeedb6984e4f5b3f6740544af}
+      \strng{authornamehash}{23b94b44f723046f5f1102c5e2098495}
+      \strng{authorfullhash}{e3a9b5bdeedb6984e4f5b3f6740544af}
+      \strng{authorfullhashraw}{e3a9b5bdeedb6984e4f5b3f6740544af}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Revista Gestión Libre}
+      \field{title}{Estado de Situación de los Procesos de Transformación Digital en las Empresas Uruguayas}
+      \field{year}{2024}
+      \true{nocite}
+    \endentry
+  \enddatalist
+\endrefsection
+\endinput
+

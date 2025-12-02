@@ -1,0 +1,47 @@
+\documentclass[sigconf,nonacm]{acmart}
+
+\input{includes/preamble_common}
+\input{includes/preamble_acm}
+
+\AtBeginDocument{\providecommand\BibTeX{{\sc Bib}\TeX}}
+
+\title[Modernización de Inventarios]{Modernización de la Gestión de Inventarios: Un Enfoque Práctico de Arquitectura de Software y Transformación Digital en el Proyecto Codexy}
+
+\author{Ruben Felipe Tovar Aviles}
+\affiliation{%
+  \institution{Servicio Nacional de Aprendizaje Centro de la Industria, la Empresa y los Servicios}
+  \city{Neiva}
+  \country{Colombia}}
+\email{}
+
+\author{Jesús Ariel Gonzales Bonilla}
+\affiliation{%
+  \institution{Servicio Nacional de Aprendizaje Centro de la Industria, la Empresa y los Servicios}
+  \city{Neiva}
+  \country{Colombia}}
+\email{}
+
+\begin{abstract}
+\input{sections/00_abstract}
+\end{abstract}
+
+\keywords{gestión de inventarios, arquitectura de software, transformación digital, Clean Architecture, .NET 9}
+
+\begin{document}
+\maketitle
+
+\nocite{*}
+
+\input{sections/01_introduccion}
+\input{sections/02_relacionados}
+\input{sections/03_metodologia}
+\input{sections/04_implementacion}
+\input{sections/05_resultados}
+\input{sections/06_discusion}
+\input{sections/07_conclusiones}
+\input{sections/A1_apendices}
+
+\bibliographystyle{ACM-Reference-Format}
+\bibliography{references}
+
+\end{document}

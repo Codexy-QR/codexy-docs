@@ -1,0 +1,13 @@
+% Bibliografía para IEEE
+\usepackage[backend=biber,style=ieee]{biblatex}
+\addbibresource{bibliography/references.bib}
+\usepackage{cleveref}
+
+% Traducción de nombres para cleveref
+\crefname{figure}{figura}{figuras}
+\Crefname{figure}{Figura}{Figuras}
+\crefname{table}{tabla}{tablas}
+\Crefname{table}{Tabla}{Tablas}
+
+% Keywords helper
+\providecommand{\keywords}[1]{\textbf{Palabras clave: } #1}
