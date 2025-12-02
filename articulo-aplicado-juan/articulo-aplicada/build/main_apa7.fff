@@ -1,0 +1,34 @@
+\begin{figure*}[hbt]
+\ifnextchar[{\eatarg}{}
+[h]
+\centering
+\includegraphics[width=0.9\columnwidth]{graphics/microservices_transformation.png}
+\caption{Transformación arquitectónica hacia MCMF}
+\end{figure*}
+\efloatseparator
+ 
+\begin{figure*}[hbt]
+\ifnextchar[{\eatarg}{}
+[h]
+\centering
+\includegraphics[width=0.9\columnwidth]{graphics/microservices_soa.jpg}
+\caption{Evolución: Monolito – SOA – Microservicios}
+\end{figure*}
+\efloatseparator
+ 
+\begin{figure*}[hbt]
+\ifnextchar[{\eatarg}{}
+[h]
+\centering
+\includegraphics[width=0.9\columnwidth]{graphics/zts.jpg}
+\caption{Modelo Zero Trust Security}
+\end{figure*}
+\efloatseparator
+ 
+\begin{figure*}[hbt]
+\ifnextchar[{\eatarg}{}
+[h]
+\centering
+\includegraphics[width=0.9\columnwidth]{graphics/performace_of_models_in_automated.jpg} % Ancho ajustado
+\caption{Rendimiento de modelos en pruebas automatizadas}
+\end{figure*}

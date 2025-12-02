@@ -1,0 +1,32 @@
+\documentclass[man]{apa7}
+
+\input{includes/preamble_common} % Carga csquotes, babel, y paquetes de figuras
+\input{includes/preamble_apa7}   % Carga biblatex (style=apa) y addbibresource
+
+\title{Evolución de Arquitecturas de Software}
+\shorttitle{Evolución de Arquitecturas de Software}
+
+\authorsnames{Juan Manuel Gutierrez Fierro}
+\authorsaffiliations{SENA – Neiva, Colombia}
+\authornote{Correspondencia: gutierrezfierrojuanmanuel@gmail.com}
+
+\abstract{\input{sections/00_abstract}}
+
+\keywords{Arquitectura de Software, Microservicios, IA Generativa, Zero Trust, EDA, DevOps, Edge Computing}
+
+\begin{document}
+\maketitle
+
+\input{sections/01_introduccion}
+\input{sections/02_relacionados}
+\input{sections/03_metodologia}
+\input{sections/04_implementacion}
+\input{sections/05_resultados}
+\input{sections/06_discusion}
+\input{sections/07_conclusiones}
+\input{sections/A1_apendices}
+
+% Este comando es correcto para BibLaTeX/Biber y el estilo APA7.
+\printbibliography
+
+\end{document}

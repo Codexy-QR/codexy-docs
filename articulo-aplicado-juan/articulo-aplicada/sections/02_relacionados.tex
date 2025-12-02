@@ -1,0 +1,42 @@
+\section{Trabajos relacionados}
+. El Eje de la Agilidad: Microservicios y DevOps
+El desarrollo de software moderno está intrínsecamente ligado a la Arquitectura de Microservicios, un modelo que responde a la necesidad de escalabilidad, resiliencia y velocidad de despliegue exigida por los entornos empresariales. Este enfoque favorece el despliegue de prácticas DevOps, permitiendo que equipos pequeños operen servicios de forma independiente \cite{event_driven_edge_2024}.
+Recientes revisiones técnicas destacan cinco áreas clave que han consolidado esta transformación: la integración de Arquitecturas Orientadas a Eventos (EDA) \cite{observability_microservices_2025}, la evolución hacia el Serverless, el despliegue en Edge Computing, el uso de estrategias multi-nube y la adopción de Zero Trust Security \cite{emerging_trends_database_2025}. Estos avances han redefinido la manera en que se diseñan y gestionan los sistemas distribuidos.
+II.2. La Crítica y el Debate Híbrido: ¿Monolitos o Microservicios?
+A pesar del éxito de los microservicios, la literatura reciente introduce una perspectiva crítica sobre la viabilidad universal de este modelo.
+1.  Costo de la Complejidad: La principal amenaza a la validez de los microservicios es su complejidad inherente. Gestionar la red, la latencia entre servicios, la observabilidad y el despliegue distribuido puede anular las ganancias de agilidad, especialmente en equipos con madurez operativa limitada \cite{bigdata_security_ia_2025}. Esto ha llevado a una tendencia observada en la industria: la "reversión de microservicios a monolitos" \cite{microservices_transformation_2025}.
+2.  El Equilibrio Híbrido (MCMF): Frente a este debate, surge una solución de compromiso: la Federación de Microservicios Monolítica (MCMF) \cite{microservices_devops_agility_2024}. Este nuevo paradigma arquitectónico busca aprovechar lo mejor de ambos mundos:
+o   Núcleo Monolítico: Las funciones centrales del negocio que requieren alta cohesión y baja variabilidad se mantienen en un núcleo monolítico estable.
+o   Federación Microservicios: Los servicios especializados (ej. reporting, integraciones de terceros) se aíslan en microservicios, lo que permite flexibilidad y experimentación en áreas clave sin poner en riesgo el sistema central.
+Este enfoque híbrido, sumado a una revisión de las abstracciones arquitectónicas más recientes \cite{service_discovery_networks_2024}, subraya que la elección arquitectónica debe ser una decisión pragmática basada en las necesidades específicas del sistema y la organización, y no una adopción ciega de tendencias.
+II.3. Caso de Estudio: Aplicación Práctica
+Para ilustrar esta discusión, se analiza un caso de estudio sobre la implementación real de aplicaciones basadas en microservicios \cite{microservices_case_study_2023}. Este ejemplo demuestra la necesidad de herramientas de orquestación (como Kubernetes) y la gestión de contenedores (Docker/AWS), confirmando que la infraestructura se convierte en un componente crítico de la arquitectura.
+
+III.    El Motor de Datos: Arquitecturas Orientadas a Eventos (EDA) y Procesamiento en Tiempo Real
+III.1. La Migración al Paradigma Orientado a Eventos
+El crecimiento exponencial de los datos y la necesidad de sistemas altamente desacoplados han impulsado el cambio del tradicional paradigma de solicitud-respuesta (request-response) hacia las Arquitecturas Orientadas a Eventos (EDA). En microservicios, donde las interacciones síncronas generan latencia y dependencias innecesarias, EDA emerge como la solución fundamental para la integración de datos en tiempo real \cite{eda_realtime_2024}. Un evento se define como un cambio de estado significativo en el sistema, lo que permite a los servicios reaccionar de manera asíncrona e inmediata.
+La implementación de EDA en entornos de nube mejora la escalabilidad y la resiliencia, garantizando que los fallos en un servicio no paralicen toda la cadena de procesamiento de datos \cite{eda_realtime_2024}. Esta arquitectura no solo facilita la comunicación entre microservicios, sino que también es el motor que impulsa la analítica avanzada, el machine learning y la toma de decisiones automatizada.
+
+\begin{figure}[h]
+\centering
+\includegraphics[width=0.9\columnwidth]{graphics/microservices_transformation.png}
+\caption{Transformación arquitectónica hacia MCMF}
+\end{figure}
+
+III.2. Herramientas Clave para el Procesamiento Streaming
+La eficiencia de la EDA depende directamente de las herramientas de streaming y almacenamiento de datos. El análisis de las tecnologías actuales identifica un stack dominante para el procesamiento de grandes volúmenes de datos en tiempo real \cite{kafka_flink_redis_2024}:
+•   Apache Kafka: Actúa como el message broker distribuido de alta capacidad, manejando el transporte de eventos con garantía de durabilidad y throughput. Es el backbone que desacopla a los productores de los consumidores, permitiendo que múltiples servicios accedan al mismo flujo de datos.
+•   Apache Flink: Se especializa en el procesamiento de streaming con estado (stateful), lo que permite realizar transformaciones complejas, ventanas de tiempo y detección de patrones (CEP) sobre los datos en movimiento, siendo crucial para el análisis predictivo.
+•   Redis: Es utilizado como capa de caching en memoria y almacenamiento de baja latencia. Actúa como una capa de servicio rápido para datos de referencia o estados intermedios, optimizando las consultas de los microservicios sin impactar el almacenamiento primario.
+Esta combinación de herramientas permite a las organizaciones pasar de un procesamiento por lotes (batch processing) con latencia de horas, a una latencia de milisegundos, habilitando casos de uso como la detección de fraude instantánea o recomendaciones personalizadas.
+
+\begin{figure}[h]
+\centering
+\includegraphics[width=0.9\columnwidth]{graphics/microservices_soa.jpg}
+\caption{Evolución: Monolito – SOA – Microservicios}
+\end{figure}
+
+III.3. Despliegue en Entornos Híbridos y Edge Computing
+La evolución de la arquitectura de datos también se extiende al borde de la red (Edge). Los ecosistemas de Big Data en ambientes híbridos y la proliferación de dispositivos IoT han hecho que el procesamiento de datos tenga que ocurrir cada vez más cerca de la fuente para mitigar la latencia y el ancho de banda \cite{iot_bigdata_hybrid_2024}.
+El Edge Computing requiere una optimización del middleware orientado a eventos para el procesamiento local \cite{event_driven_edge_2024}. Esto implica desplegar versiones ligeras de Kafka o brokers especializados en dispositivos de borde. Paralelamente, esta necesidad de acceso rápido a datos ha impulsado tendencias en el diseño de bases de datos, con la adopción de modelos NoSQL y NewSQL que ofrecen mayor flexibilidad y escalabilidad horizontal para entornos distribuidos \cite{emerging_trends_database_2025}.
+En resumen, la EDA, soportada por estas herramientas, no solo es una arquitectura de comunicación, sino una estrategia para maximizar el valor del dato al instante, sentando las bases operativas para la integración de la IA generativa.

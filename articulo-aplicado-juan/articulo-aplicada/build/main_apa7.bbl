@@ -1,0 +1,305 @@
+% $ biblatex auxiliary file $
+% $ biblatex bbl format version 3.3 $
+% Do not modify the above lines!
+%
+% This is an auxiliary file used by the 'biblatex' package.
+% This file may safely be deleted. It will be recreated by
+% biber as required.
+%
+\begingroup
+\makeatletter
+\@ifundefined{ver@biblatex.sty}
+  {\@latex@error
+     {Missing 'biblatex' package}
+     {The bibliography requires the 'biblatex' package.}
+      \aftergroup\endinput}
+  {}
+\endgroup
+
+
+\refsection{0}
+  \datalist[entry]{none/global//global/global/global}
+    \entry{event_driven_edge_2024}{article}{}{}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{IEEE}
+      \field{title}{Event Driven Middleware Optimization in IoT Edge Computing}
+      \field{year}{2024}
+      \verb{urlraw}
+      \verb https://ieeexplore.ieee.org/abstract/document/10543208
+      \endverb
+      \verb{url}
+      \verb https://ieeexplore.ieee.org/abstract/document/10543208
+      \endverb
+    \endentry
+    \entry{observability_microservices_2025}{article}{}{}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{IEEE}
+      \field{title}{Observability in Microservices: An In-Depth Exploration of Frameworks, Challenges, and Deployment Paradigms}
+      \field{year}{2025}
+      \verb{urlraw}
+      \verb https://ieeexplore.ieee.org/abstract/document/10967524
+      \endverb
+      \verb{url}
+      \verb https://ieeexplore.ieee.org/abstract/document/10967524
+      \endverb
+    \endentry
+    \entry{emerging_trends_database_2025}{article}{}{}
+      \field{sortinit}{3}
+      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{EPJ Web of Conferences}
+      \field{title}{Emerging Trends in Database Design: Toward Improved Modeling and Development Practices}
+      \field{year}{2025}
+      \verb{urlraw}
+      \verb https://www.epj-conferences.org/articles/epjconf/abs/2025/13/epjconf_icetsf2025_01065/epjconf_icetsf2025_01065.html
+      \endverb
+      \verb{url}
+      \verb https://www.epj-conferences.org/articles/epjconf/abs/2025/13/epjconf_icetsf2025_01065/epjconf_icetsf2025_01065.html
+      \endverb
+    \endentry
+    \entry{bigdata_security_ia_2025}{article}{}{}
+      \field{sortinit}{4}
+      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{IEEE}
+      \field{title}{Avance de Big Data, seguridad e IA}
+      \field{year}{2025}
+      \verb{urlraw}
+      \verb https://ieeexplore.ieee.org/abstract/document/10867000
+      \endverb
+      \verb{url}
+      \verb https://ieeexplore.ieee.org/abstract/document/10867000
+      \endverb
+    \endentry
+    \entry{microservices_transformation_2025}{article}{}{}
+      \field{sortinit}{5}
+      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{ResearchGate}
+      \field{title}{Recent Advances in Microservices Transformation: A Technical Overview}
+      \field{year}{2025}
+      \verb{urlraw}
+      \verb https://al-kindipublishers.org/index.php/jcsts/article/view/9399
+      \endverb
+      \verb{url}
+      \verb https://al-kindipublishers.org/index.php/jcsts/article/view/9399
+      \endverb
+    \endentry
+    \entry{microservices_devops_agility_2024}{incollection}{}{}
+      \field{sortinit}{6}
+      \field{sortinithash}{b33bc299efb3c36abec520a4c896a66d}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{Springer Proceedings}
+      \field{title}{Understanding Microservices Architecture and Its Impact on DevOps Agility}
+      \field{year}{2024}
+      \verb{urlraw}
+      \verb https://link.springer.com/chapter/10.1007/978-3-031-64500-1_23
+      \endverb
+      \verb{url}
+      \verb https://link.springer.com/chapter/10.1007/978-3-031-64500-1_23
+      \endverb
+    \endentry
+    \entry{service_discovery_networks_2024}{article}{}{}
+      \field{sortinit}{7}
+      \field{sortinithash}{108d0be1b1bee9773a1173443802c0a3}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{IEEE}
+      \field{title}{Redes Entre nubes y mecanismos de descubrimiento de servicios (DNS, Consul, Istio)}
+      \field{year}{2024}
+      \verb{urlraw}
+      \verb https://ieeexplore.ieee.org/abstract/document/10680000
+      \endverb
+      \verb{url}
+      \verb https://ieeexplore.ieee.org/abstract/document/10680000
+      \endverb
+    \endentry
+    \entry{microservices_case_study_2023}{article}{}{}
+      \field{sortinit}{8}
+      \field{sortinithash}{a231b008ebf0ecbe0b4d96dcc159445f}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{ResearchGate}
+      \field{title}{Arquitectura e Implementación de Aplicaciones Basadas en Microservicios: Un Caso de Estudio}
+      \field{year}{2023}
+      \verb{urlraw}
+      \verb https://www.researchgate.net/publication/386000000_Arquitectura_e_Implementacion_de_Aplicaciones_Basadas_en_Microservicios_Un_Caso_de_Estudio
+      \endverb
+      \verb{url}
+      \verb https://www.researchgate.net/publication/386000000_Arquitectura_e_Implementacion_de_Aplicaciones_Basadas_en_Microservicios_Un_Caso_de_Estudio
+      \endverb
+    \endentry
+    \entry{eda_realtime_2024}{article}{}{}
+      \field{sortinit}{9}
+      \field{sortinithash}{0a5ebc79d83c96b6579069544c73c7d4}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{ResearchGate}
+      \field{title}{Implementing Event-Driven Architecture for Real-Time Data Integration in Cloud Environments}
+      \field{year}{2024}
+      \verb{urlraw}
+      \verb https://www.researchgate.net/publication/388534188_Implementing_Event-Driven_Architecture_for_Real-Time_Data_Integration_in_Cloud_Environments/links/67abe8d296e7fb48b9bf184b/Implementing-Event-Driven-Architecture-for-Real-Time-Data-Integration-in-Cloud-Environments.pdf
+      \endverb
+      \verb{url}
+      \verb https://www.researchgate.net/publication/388534188_Implementing_Event-Driven_Architecture_for_Real-Time_Data_Integration_in_Cloud_Environments/links/67abe8d296e7fb48b9bf184b/Implementing-Event-Driven-Architecture-for-Real-Time-Data-Integration-in-Cloud-Environments.pdf
+      \endverb
+    \endentry
+    \entry{kafka_flink_redis_2024}{article}{}{}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{ResearchGate}
+      \field{title}{Herramientas y Técnicas para el procesamiento de datos en tiempo real (Kafka, Flink, Redis)}
+      \field{year}{2024}
+      \verb{urlraw}
+      \verb https://www.researchgate.net/publication/385000000_Herramientas_y_Tecnicas_para_el_procesamiento_de_datos_en_tiempo_real
+      \endverb
+      \verb{url}
+      \verb https://www.researchgate.net/publication/385000000_Herramientas_y_Tecnicas_para_el_procesamiento_de_datos_en_tiempo_real
+      \endverb
+    \endentry
+    \entry{iot_bigdata_hybrid_2024}{article}{}{}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{ResearchGate}
+      \field{title}{IoT y ecosistemas de Big Data en ambientes híbridos}
+      \field{year}{2024}
+      \verb{urlraw}
+      \verb https://www.researchgate.net/publication/385500000_IoT_y_Ecosistemas_de_Big_Data_en_Ambientes_Hibridos
+      \endverb
+      \verb{url}
+      \verb https://www.researchgate.net/publication/385500000_IoT_y_Ecosistemas_de_Big_Data_en_Ambientes_Hibridos
+      \endverb
+    \endentry
+    \entry{zero_trust_multicloud_2024}{article}{}{}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{ResearchGate}
+      \field{title}{Implementing Zero Trust Security in Multi-Cloud Microservices}
+      \field{year}{2024}
+      \verb{urlraw}
+      \verb https://www.researchgate.net/profile/Oluwasanmi-Adanigbo/publication/392264661_Implementing_Zero_Trust_Security_in_Multi-Cloud_Microservices_Platforms_A_Review_and_Architectural_Framework/links/683b2d8f6b5a287c304873f6/Implementing-Zero-Trust-Security-in-Multi-Cloud-Microservices-Platforms-A-Review-and-Architectural-Framework.pdf
+      \endverb
+      \verb{url}
+      \verb https://www.researchgate.net/profile/Oluwasanmi-Adanigbo/publication/392264661_Implementing_Zero_Trust_Security_in_Multi-Cloud_Microservices_Platforms_A_Review_and_Architectural_Framework/links/683b2d8f6b5a287c304873f6/Implementing-Zero-Trust-Security-in-Multi-Cloud-Microservices-Platforms-A-Review-and-Architectural-Framework.pdf
+      \endverb
+    \endentry
+    \entry{access_control_models_2025}{article}{}{}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{IEEE}
+      \field{title}{Literature Review on Access Control Models}
+      \field{year}{2025}
+      \verb{urlraw}
+      \verb https://ieeexplore.ieee.org/abstract/document/10902500
+      \endverb
+      \verb{url}
+      \verb https://ieeexplore.ieee.org/abstract/document/10902500
+      \endverb
+    \endentry
+    \entry{mlops_trends_2024}{article}{}{}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{ResearchGate}
+      \field{title}{Tendencias en la gestión ágil para el aprendizaje automático (MLOps)}
+      \field{year}{2024}
+      \verb{urlraw}
+      \verb https://www.researchgate.net/publication/386050000_Tendencias_en_la_gestion_agil_para_el_aprendizaje_automatico_MLOps
+      \endverb
+      \verb{url}
+      \verb https://www.researchgate.net/publication/386050000_Tendencias_en_la_gestion_agil_para_el_aprendizaje_automatico_MLOps
+      \endverb
+    \endentry
+    \entry{genai_testing_comparative_2024}{article}{}{}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{IJST Journal}
+      \field{title}{Generative AI in Automated Software Testing: A Comparative Study}
+      \field{year}{2024}
+      \verb{urlraw}
+      \verb https://www.ijstjournal.com/papers/volume-2/issue-1/ijst241006/
+      \endverb
+      \verb{url}
+      \verb https://www.ijstjournal.com/papers/volume-2/issue-1/ijst241006/
+      \endverb
+    \endentry
+    \entry{analysis_genai_source_scanning_2025}{article}{}{}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{PhilPapers}
+      \field{title}{Analysis on GenAI for Source Code Scanning and Automated Software Testing}
+      \field{year}{2025}
+      \verb{urlraw}
+      \verb https://philpapers.org/rec/PRAAOG
+      \endverb
+      \verb{url}
+      \verb https://philpapers.org/rec/PRAAOG
+      \endverb
+    \endentry
+    \entry{microservice_to_monolith_2024}{article}{}{}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{MDPI}
+      \field{title}{From Microservice to Monolith: A Multivocal Literature Review}
+      \field{year}{2024}
+      \verb{urlraw}
+      \verb https://www.mdpi.com/2079-9292/13/8/1452
+      \endverb
+      \verb{url}
+      \verb https://www.mdpi.com/2079-9292/13/8/1452
+      \endverb
+    \endentry
+    \entry{mcmf_2025}{article}{}{}
+      \field{sortinit}{3}
+      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Google Scholar}
+      \field{title}{Monolith-Centric Microservices Federation: A New Paradigm for Enterprise Data Integration}
+      \field{year}{2025}
+      \verb{urlraw}
+      \verb https://www.ijsat.org/research-paper.php?id=2586
+      \endverb
+      \verb{url}
+      \verb https://www.ijsat.org/research-paper.php?id=2586
+      \endverb
+    \endentry
+    \entry{revisiting_abstractions_2025}{article}{}{}
+      \field{sortinit}{3}
+      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{IEEE}
+      \field{title}{Revisiting Abstractions for Software Architecture and Tools to Support Them}
+      \field{year}{2025}
+      \verb{urlraw}
+      \verb https://ieeexplore.ieee.org/abstract/document/10854557
+      \endverb
+      \verb{url}
+      \verb https://ieeexplore.ieee.org/abstract/document/10854557
+      \endverb
+    \endentry
+    \entry{emotional_intelligence_leadership_2023}{article}{}{}
+      \field{sortinit}{3}
+      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Revista de Tecnología y Ciencia}
+      \field{title}{Impacto de inteligencia Emocional en el liderazgo de equipos de desarrollo de software}
+      \field{year}{2023}
+      \verb{urlraw}
+      \verb https://revistatcy.com/articulo/impacto-de-inteligencia-emocional-en-el-liderazgo-de-equipos-de-desarrollo-de-software
+      \endverb
+      \verb{url}
+      \verb https://revistatcy.com/articulo/impacto-de-inteligencia-emocional-en-el-liderazgo-de-equipos-de-desarrollo-de-software
+      \endverb
+    \endentry
+  \enddatalist
+\endrefsection
+\endinput
+
