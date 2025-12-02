@@ -1,0 +1,68 @@
+\begin{figure*}[hbt]
+\ifnextchar[{\eatarg}{}
+[H]
+    \centering
+    \includegraphics[width=0.3\textwidth]{graphics/comparacion_metodologias.pdf}
+    \caption{Comparación de efectividad de QR por sector}
+    \label{fig:comparacion_metodologias}
+\end{figure*}
+\efloatseparator
+ 
+\begin{figure*}[hbt]
+\ifnextchar[{\eatarg}{}
+[h]
+    \centering
+    \includegraphics[width=0.46\textwidth]{graphics/correlacion_devops.pdf}
+    \caption{Relación entre el grado de automatización y el desempeño del grupo de desarrollo}
+    \label{fig:correlacion_devops}
+\end{figure*}
+\efloatseparator
+ 
+\begin{figure*}[hbt]
+\ifnextchar[{\eatarg}{}
+[h]
+    \centering
+    \includegraphics[width=0.8\textwidth]{graphics/metricas_dora.png}
+    \caption{Medidas DORA implementadas en sistemas con códigos QR}
+    \label{fig:metricas_dora_impl}
+\end{figure*}
+\efloatseparator
+ 
+\begin{figure*}[hbt]
+\ifnextchar[{\eatarg}{}
+[h]
+    \centering
+    \includegraphics[width=0.7\textwidth]{graphics/evolucion_metricas.png}
+    \caption{Evolución de métricas en sistemas con QR}
+    \label{fig:evolucion_metricas_impl}
+\end{figure*}
+\efloatseparator
+ 
+\begin{figure*}[hbt]
+\ifnextchar[{\eatarg}{}
+[h]
+    \centering
+    \includegraphics[width=0.8\textwidth]{graphics/comparacion_metodologias.pdf}
+    \caption{Comparación de metodologías QR por sector}
+    \label{fig:comparacion_metodologias}
+\end{figure*}
+\efloatseparator
+ 
+\begin{figure*}[hbt]
+\ifnextchar[{\eatarg}{}
+[htbp]
+    \centering
+    \includegraphics[width=0.48\textwidth]{graphics/metricas_dora.pdf}
+    \caption{Métricas DORA en sistemas con QR}
+    \label{fig:metricas_dora_res}
+\end{figure*}
+\efloatseparator
+ 
+\begin{figure*}[hbt]
+\ifnextchar[{\eatarg}{}
+[htbp]
+    \centering
+    \includegraphics[width=0.48\textwidth]{graphics/evolucion_metricas.pdf}
+    \caption{Evolución de métricas en inventarios con QR}
+    \label{fig:evolucion_metricas_res}
+\end{figure*}

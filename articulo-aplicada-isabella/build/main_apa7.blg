@@ -1,0 +1,9 @@
+[0] Config.pm:328> INFO - This is Biber 2.21
+[0] Config.pm:331> INFO - Logfile is 'build/main_apa7.blg'
+[129] biber:342> INFO - === Tue Dec  2, 2025, 01:02:35
+[159] Biber.pm:421> INFO - Reading 'build/main_apa7.bcf'
+[257] Biber.pm:1002> INFO - Found 0 citekeys in bib section 0
+[284] bbl.pm:676> INFO - Writing 'build/main_apa7.bbl' with encoding 'UTF-8'
+[285] bbl.pm:779> INFO - Output to build/main_apa7.bbl
+[286] Biber.pm:132> WARN - The file 'build/main_apa7.bcf' does not contain any citations!
+[286] Biber.pm:134> INFO - WARNINGS: 1

@@ -1,0 +1,89 @@
+\begin{table*}[hbt]
+\ifnextchar[{\eatarg}{}
+[htbp]
+\centering
+\caption{Porcentajes de efectividad por artículo}
+\label{tab:efectividad_impl}
+\begin{tabular}{|c|c|c|}
+\hline
+Artículo & Efectividad (\%) & Descripción \\
+\hline
+1 & 100 & Pruebas Black Box \\
+2 & 95 & Desarrollo ágil \\
+... & ... & ... \\
+\hline
+\end{tabular}
+\end{table*}
+\efloatseparator
+ 
+\begin{table*}[hbt]
+\ifnextchar[{\eatarg}{}
+[htbp]
+\centering
+\caption{Resumen de porcentajes por categoría}
+\label{tab:resumen_porcentajes_impl}
+\begin{tabular}{|c|c|}
+\hline
+Categoría & Porcentaje promedio de efectividad \\
+\hline
+Inventarios & 98\% \\
+Salud & 97\% \\
+Agricultura & 96\% \\
+Educación & 94\% \\
+Otros & 95\% \\
+\hline
+\end{tabular}
+\end{table*}
+\efloatseparator
+ 
+\begin{table*}[hbt]
+\ifnextchar[{\eatarg}{}
+[htbp]
+\centering
+\caption{Comparación de tecnologías}
+\label{tab:comparacion}
+\begin{tabular}{|c|c|c|}
+\hline
+Tecnología & Ventajas & Desventajas \\
+\hline
+QR & Simple, gratuito & Requiere escáner \\
+Android & Accesible & Dependiente de Google \\
+Web & Multiplataforma & Requiere internet \\
+\hline
+\end{tabular}
+\end{table*}
+\efloatseparator
+ 
+\begin{table*}[hbt]
+\ifnextchar[{\eatarg}{}
+[htbp]
+\centering
+\caption{Porcentajes de efectividad}
+\label{tab:efectividad_res}
+\begin{tabular}{|c|c|c|}
+\hline
+Artículo & Efectividad (\%) & Descripción \\
+\hline
+1 & 100 & Pruebas exitosas \\
+2 & 95 & Desarrollo ágil \\
+3 & 90 & Automatización \\
+4 & 92 & Prototipado \\
+5 & 100 & Análisis general \\
+6 & 77 & Reducción pérdidas \\
+7 & 95 & Optimización \\
+8 & 98 & Diseminación \\
+9 & 96 & Competencias \\
+10 & 94 & Planificación \\
+11 & 97 & Digitalización \\
+12 & 99 & Control \\
+13 & 97.39 & Cumplimiento \\
+14 & 97.39 & Similar \\
+15 & 100 & Trazabilidad \\
+16 & 96 & Monitoreo \\
+17 & 93 & Aprendizaje \\
+18 & 95 & Interactividad \\
+19 & 98 & Seguridad \\
+20 & 90 & Actualización \\
+\hline
+\end{tabular}
+\end{table*}
