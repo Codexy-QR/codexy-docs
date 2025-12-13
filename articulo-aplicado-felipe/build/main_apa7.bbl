@@ -98,6 +98,7 @@
       \field{journaltitle}{IT Revolution}
       \field{title}{Accelerate: The Science of Lean Software and DevOps}
       \field{year}{2018}
+      \true{nocite}
     \endentry
     \entry{jain2021analisis}{article}{}{}
       \true{moreauthor}
@@ -509,6 +510,7 @@
       \field{journaltitle}{IT Revolution}
       \field{title}{Accelerate: The Science of Lean Software and DevOps}
       \field{year}{2018}
+      \true{nocite}
     \endentry
     \entry{jain2021analisis}{article}{}{}
       \true{moreauthor}

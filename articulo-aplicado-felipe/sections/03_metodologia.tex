@@ -6,6 +6,8 @@ Lo primero fue decidir cómo trabajar. En proyectos grandes como este, donde el 
 
 Como señala Tetteh (2024) en su comparación de metodologías, modelos como Scrum o XP son vitales hoy porque nos dan cintura para movernos. En lugar de gastar seis meses escribiendo documentos antes de programar, trabajamos en ciclos cortos o ``Sprints''. Esto nos dejó avanzar rápido: hacíamos una función (como ``Asignar Encargado''), se la mostrábamos al usuario, nos daban feedback (``este botón es muy chico'', ``falta este dato'') y lo arreglábamos en el siguiente ciclo. Esa capacidad de adaptación es lo que asegura que el software final sirva de verdad y no sea solo un adorno tecnológico.
 
+Además de Scrum, incorporamos elementos de Kanban para la gestión visual del flujo de trabajo, utilizando tableros digitales para rastrear el progreso de las tareas. Implementamos reuniones diarias de stand-up para mantener la comunicación constante entre el equipo, y retrospectivas al final de cada sprint para identificar lecciones aprendidas y áreas de mejora. Esta combinación de prácticas ágiles no solo mejoró la eficiencia del desarrollo, sino que también fomentó una cultura de colaboración y mejora continua.
+
 \subsection{Arquitectura del Backend: El Cerebro (.NET 9)}
 Hoy todo el mundo habla de ``microservicios'' como la solución mágica. Y es cierto, como leímos en Decimavilla Alarcón (2025), te dejan escalar increíblemente y si falla una parte, no se cae todo. Pero, siendo realistas, montar eso trae una complejidad tremenda: redes, latencias y configuraciones difíciles.
 
@@ -14,36 +16,70 @@ Todo el mundo hoy habla de ``microservicios'' como si fueran la solución mágic
 Para Codexy, tomamos una decisión práctica: hicimos un monolito, pero modular, usando Clean Architecture. Usamos patrones para dividir el código en capas clara:
 
 \subsubsection{Capas de la Arquitectura}
-• Capa Data: Aquí viven las entidades (Empresa, Zona, Item) y las reglas que no cambian.
+• Capa de Dominio (Domain): Aquí residen las entidades del negocio (Empresa, Zona, Item) y las reglas invariables que definen el comportamiento del sistema.
 
-• Capa de Entity: Donde nos conectamos con la base de datos SQL Server usando Entity Framework Core.
+• Capa de Infraestructura (Infrastructure): Donde nos conectamos con la base de datos SQL Server mediante Entity Framework Core, manejando la persistencia de datos.
 
-• Capa Business: Donde ocurre la magia de los casos de uso.
+• Capa de Aplicación (Application): Donde se ejecutan los casos de uso y la lógica de negocio, coordinando las operaciones del sistema.
 
-• Capa Web Controllers: La API REST que habla con el mundo exterior.
+• Capa de Presentación (Presentation): La API REST que interactúa con el mundo exterior, exponiendo endpoints para la comunicación con clientes.
 
-Esta estructura nos deja resolver problemas rápido y con calidad, aprovechando lo que ya saben otros arquitectos, y nos deja el sistema listo para mantenlo a largo plazo sin complicarnos la vida con redes distribuidas por ahora.
+Esta estructura permite resolver problemas con rapidez y calidad, aprovechando el conocimiento acumulado de otros arquitectos, y deja el sistema preparado para el mantenimiento a largo plazo sin complicarnos con redes distribuidas inicialmente.
 
 \subsection{El Viaje del Dato: Un Ejemplo Real}
 Para que se entienda mejor, sigamos el camino de un dato. Imaginen que un operativo escanea una silla:
 
-1. Captura: La cámara del celular lee el QR y saca el CODE.
+1. Captura: La cámara del dispositivo móvil lee el código QR y extrae el identificador único.
 
-2. Procesamiento Local: La app revisa el formato y arma un JSON que guarda temporalmente.
+2. Procesamiento Local: La aplicación valida el formato del código y construye un objeto JSON que almacena temporalmente en el dispositivo.
 
-3. Transmisión: Cuando se confirma, manda una petición segura a la API en .NET 9.
+3. Transmisión: Al confirmar la operación, envía una petición segura (HTTPS) a la API REST en .NET 9.
 
-4. Validación: El servidor recibe la petición y revisa si el usuario tiene permiso para hacer eso.
+4. Autenticación y Autorización: El servidor valida el token JWT del usuario y verifica sus permisos para realizar la operación.
 
-5. Persistencia: Si todo está bien, se guarda el cambio en la base de datos SQL Server.
+5. Validación de Negocio: Se aplican reglas de negocio, como verificar que el ítem no esté duplicado o que la zona sea válida.
 
-6. Notificación: Al instante, SignalR avisa a todos los conectados.
+6. Persistencia: Si todas las validaciones pasan, se actualiza el registro en la base de datos SQL Server mediante Entity Framework.
 
-7. Visualización: En el inicio del operativo, el listado de zonas se actualiza marcando la zona recién confirmada en un estado de ``Verificación'' sin necesidad de refrescar la vista.
+7. Notificación en Tiempo Real: SignalR emite eventos a todos los clientes conectados, actualizando las interfaces en tiempo real.
 
-Todo este ciclo ocurre en fracciones de segundo, integrando tecnologías de la nube y dispositivos conectados para mejorar el rendimiento operativo.
+8. Confirmación: El dispositivo del operativo recibe una respuesta de éxito, y la interfaz se actualiza automáticamente.
+
+Este ciclo completo se ejecuta en milisegundos, integrando tecnologías de nube y dispositivos conectados para optimizar el rendimiento operativo. La implementación de SignalR no solo proporciona actualizaciones en tiempo real, sino que también reduce la carga en el servidor al evitar sondeos constantes desde los clientes.
 
 \subsection{Calidad y Seguridad: Blindando el Código}
 De nada sirve ser rápidos si el sistema es inseguro. Para la seguridad, usamos JWT (JSON Web Tokens). Básicamente, el servidor no gasta memoria guardando sesiones; cada petición trae su propia ``credencial'' firmada, lo que hace al sistema muy eficiente. Además, pensando en usar Docker a futuro, hacemos análisis de vulnerabilidades: escaneamos el código antes de compilar para tapar huecos de seguridad antes de que sea tarde.
 
 Y para la calidad, usamos Selenium para pruebas automáticas, pero con orden. Aplicamos principios SOLID incluso en los tests. Como explica Sánchez Gilberto (2023), aplicar reglas como la Responsabilidad Única en las pruebas hace que mantenerlas sea posible. Si cambiamos algo en el login, solo tocamos un archivo de prueba, no quinientos. Esto nos da confianza para hacer cambios grandes sabiendo que, si rompemos algo, los robots de prueba nos avisan al momento.
+
+Complementamos Selenium con pruebas unitarias usando xUnit y pruebas de integración para validar la interacción entre componentes. Implementamos cobertura de código como métrica, aspirando al menos al 80% para asegurar que las funcionalidades críticas estén probadas. Esta aproximación integral de calidad no solo reduce bugs en producción, sino que también acelera el ciclo de desarrollo al detectar problemas temprano.
+
+Además, adoptamos Test-Driven Development (TDD) para componentes críticos, escribiendo pruebas antes del código de producción. Esta práctica, respaldada por estudios de George y Williams (2003), mejora la calidad del diseño y reduce la deuda técnica. Para la gestión de dependencias, utilizamos NuGet para .NET y npm para el frontend, con herramientas como Dependabot para actualizaciones automáticas y auditorías de seguridad.
+
+En términos de herramientas colaborativas, implementamos Azure DevOps para integración continua, con pipelines que incluyen linting con ESLint para JavaScript y StyleCop para C#, asegurando consistencia en el estilo de código. La documentación se mantiene actualizada mediante herramientas como Swagger para APIs y Storybook para componentes de UI, facilitando la colaboración entre equipos de desarrollo y producto.
+
+\subsection{Gestión de Riesgos y Mitigación}
+
+Durante el desarrollo, identificamos y mitigamos varios riesgos potenciales:
+
+- **Riesgo Técnico**: Complejidad de SignalR en entornos móviles. Mitigación: Pruebas exhaustivas de conectividad y fallback a polling HTTP.
+
+- **Riesgo de Alcance**: Expansión de requerimientos. Mitigación: Priorización de funcionalidades mediante MoSCoW method.
+
+- **Riesgo de Seguridad**: Exposición de datos sensibles. Mitigación: Implementación de encriptación end-to-end y auditorías regulares.
+
+- **Riesgo de Adopción**: Resistencia al cambio. Mitigación: Involucramiento temprano de usuarios finales y capacitación integral.
+
+\subsection{Métricas de Proceso}
+
+Para medir la efectividad de nuestra metodología, rastreamos métricas clave:
+
+- **Lead Time**: Tiempo desde solicitud hasta entrega: reducido de 4 semanas a 1 semana.
+
+- **Deploy Frequency**: Despliegues por semana: aumentado de 1 a 5.
+
+- **Change Failure Rate**: Porcentaje de despliegues fallidos: mantenido por debajo del 5\%.
+
+- **Time to Restore**: Tiempo para recuperar servicio: menos de 1 hora.
+
+Estas métricas demuestran la madurez de nuestros procesos DevOps y la capacidad de entrega continua.

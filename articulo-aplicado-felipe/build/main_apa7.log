@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999997 (TeX Live 2025) (preloaded format=xelatex 2025.11.20)  29 NOV 2025 08:13
+This is XeTeX, Version 3.141592653-2.6-0.999997 (TeX Live 2025) (preloaded format=xelatex 2025.11.22)  13 DEC 2025 04:39
 entering extended mode
  \write18 enabled.
  file:line:error style messages enabled.
@@ -817,21 +817,21 @@ Package: enumitem 2025/02/06 v3.11 Customized lists
 \lst@lineno=\count384
 \lst@maxwidth=\dimen313
 (/opt/texlive/texdir/texmf-dist/tex/latex/listings/lstpatch.sty
-File: lstpatch.sty 2025/11/14 1.11a (Carsten Heinz)
+File: lstpatch.sty 2025/11/14 1.11b (Carsten Heinz)
 ) (/opt/texlive/texdir/texmf-dist/tex/latex/listings/lstmisc.sty
-File: lstmisc.sty 2025/11/14 1.11a (Carsten Heinz)
+File: lstmisc.sty 2025/11/14 1.11b (Carsten Heinz)
 \c@lstnumber=\count385
 \lst@skipnumbers=\count386
 \lst@framebox=\box80
 ) (/opt/texlive/texdir/texmf-dist/tex/latex/listings/listings.cfg
-File: listings.cfg 2025/11/14 1.11a listings configuration
+File: listings.cfg 2025/11/14 1.11b listings configuration
 ))
-Package: listings 2025/11/14 1.11a (Carsten Heinz)
+Package: listings 2025/11/14 1.11b (Carsten Heinz)
 ==> First Aid for listings.sty no longer applied!
     Expected:
         2024/09/23 1.10c (Carsten Heinz)
     but found:
-        2025/11/14 1.11a (Carsten Heinz)
+        2025/11/14 1.11b (Carsten Heinz)
     so I'm assuming it got fixed.
 ) (./includes/preamble_apa7.tex (/opt/texlive/texdir/texmf-dist/tex/latex/bibla
 tex/biblatex.sty
@@ -1247,6 +1247,8 @@ Package fancyhdr Warning: \headheight is too small (15.2pt):
 [1
 
 ] (./sections/00_abstract.tex)
+Underfull \vbox (badness 2368) has occurred while \output is active []
+
 
 Package fancyhdr Warning: \headheight is too small (15.2pt): 
 (fancyhdr)                Make it at least 15.21004pt, for example:
@@ -1254,7 +1256,7 @@ Package fancyhdr Warning: \headheight is too small (15.2pt):
 (fancyhdr)                You might also make \topmargin smaller:
 (fancyhdr)                \addtolength{\topmargin}{-0.01004pt}.
 
-[2] (./sections/01_introduccion.tex
+[2]
 
 Package fancyhdr Warning: \headheight is too small (15.2pt): 
 (fancyhdr)                Make it at least 15.21004pt, for example:
@@ -1262,7 +1264,7 @@ Package fancyhdr Warning: \headheight is too small (15.2pt):
 (fancyhdr)                You might also make \topmargin smaller:
 (fancyhdr)                \addtolength{\topmargin}{-0.01004pt}.
 
-[3]) (./sections/02_relacionados.tex
+[3] (./sections/01_introduccion.tex
 LaTeX Font Info:    Trying to load font information for OT1+lmr on input line 7
 .
 (/opt/texlive/texdir/texmf-dist/tex/latex/lm/ot1lmr.fd
@@ -1301,6 +1303,8 @@ Package fancyhdr Warning: \headheight is too small (15.2pt):
 (fancyhdr)                \addtolength{\topmargin}{-0.01004pt}.
 
 [4]
+Underfull \vbox (badness 4752) has occurred while \output is active []
+
 
 Package fancyhdr Warning: \headheight is too small (15.2pt): 
 (fancyhdr)                Make it at least 15.21004pt, for example:
@@ -1309,7 +1313,7 @@ Package fancyhdr Warning: \headheight is too small (15.2pt):
 (fancyhdr)                \addtolength{\topmargin}{-0.01004pt}.
 
 [5]
-Underfull \vbox (badness 3199) has occurred while \output is active []
+Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
 Package fancyhdr Warning: \headheight is too small (15.2pt): 
@@ -1318,7 +1322,7 @@ Package fancyhdr Warning: \headheight is too small (15.2pt):
 (fancyhdr)                You might also make \topmargin smaller:
 (fancyhdr)                \addtolength{\topmargin}{-0.01004pt}.
 
-[6]) (./sections/03_metodologia.tex
+[6]) (./sections/02_relacionados.tex
 
 Package fancyhdr Warning: \headheight is too small (15.2pt): 
 (fancyhdr)                Make it at least 15.21004pt, for example:
@@ -1334,7 +1338,28 @@ Package fancyhdr Warning: \headheight is too small (15.2pt):
 (fancyhdr)                You might also make \topmargin smaller:
 (fancyhdr)                \addtolength{\topmargin}{-0.01004pt}.
 
-[8]) (./sections/04_implementacion.tex
+[8]
+./sections/02_relacionados.tex:25: You can't use `macro parameter character #' 
+in horizontal mode.
+l.25 ... el enfoque funcional de lenguajes como F#
+                                                   o Scala, pero optamos por...
+Sorry, but I'm not programmed to handle this case;
+I'll just pretend that you didn't ask for it.
+If you're in the wrong mode, you might be able to
+return to the right one by typing `I}' or `I$' or `I\par'.
+
+./sections/02_relacionados.tex:25: You can't use `macro parameter character #' 
+in horizontal mode.
+l.25 ...uajes como F# o Scala, pero optamos por C#
+                                                   por su madurez en el ecos...
+Sorry, but I'm not programmed to handle this case;
+I'll just pretend that you didn't ask for it.
+If you're in the wrong mode, you might be able to
+return to the right one by typing `I}' or `I$' or `I\par'.
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
 
 Package fancyhdr Warning: \headheight is too small (15.2pt): 
 (fancyhdr)                Make it at least 15.21004pt, for example:
@@ -1343,18 +1368,256 @@ Package fancyhdr Warning: \headheight is too small (15.2pt):
 (fancyhdr)                \addtolength{\topmargin}{-0.01004pt}.
 
 [9]
+./sections/02_relacionados.tex:34: Missing $ inserted.
+<inserted text> 
+                $
+l.34 
+     
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+
+Package fancyhdr Warning: \headheight is too small (15.2pt): 
+(fancyhdr)                Make it at least 15.21004pt, for example:
+(fancyhdr)                \setlength{\headheight}{15.21004pt}.
+(fancyhdr)                You might also make \topmargin smaller:
+(fancyhdr)                \addtolength{\topmargin}{-0.01004pt}.
+
+[10]
+Underfull \vbox (badness 1867) has occurred while \output is active []
+
+
+Package fancyhdr Warning: \headheight is too small (15.2pt): 
+(fancyhdr)                Make it at least 15.21004pt, for example:
+(fancyhdr)                \setlength{\headheight}{15.21004pt}.
+(fancyhdr)                You might also make \topmargin smaller:
+(fancyhdr)                \addtolength{\topmargin}{-0.01004pt}.
+
+[11]) (./sections/03_metodologia.tex
+
+Package fancyhdr Warning: \headheight is too small (15.2pt): 
+(fancyhdr)                Make it at least 15.21004pt, for example:
+(fancyhdr)                \setlength{\headheight}{15.21004pt}.
+(fancyhdr)                You might also make \topmargin smaller:
+(fancyhdr)                \addtolength{\topmargin}{-0.01004pt}.
+
+[12]
+
+Package fancyhdr Warning: \headheight is too small (15.2pt): 
+(fancyhdr)                Make it at least 15.21004pt, for example:
+(fancyhdr)                \setlength{\headheight}{15.21004pt}.
+(fancyhdr)                You might also make \topmargin smaller:
+(fancyhdr)                \addtolength{\topmargin}{-0.01004pt}.
+
+[13]
+
+Package fancyhdr Warning: \headheight is too small (15.2pt): 
+(fancyhdr)                Make it at least 15.21004pt, for example:
+(fancyhdr)                \setlength{\headheight}{15.21004pt}.
+(fancyhdr)                You might also make \topmargin smaller:
+(fancyhdr)                \addtolength{\topmargin}{-0.01004pt}.
+
+[14]
+
+Package fancyhdr Warning: \headheight is too small (15.2pt): 
+(fancyhdr)                Make it at least 15.21004pt, for example:
+(fancyhdr)                \setlength{\headheight}{15.21004pt}.
+(fancyhdr)                You might also make \topmargin smaller:
+(fancyhdr)                \addtolength{\topmargin}{-0.01004pt}.
+
+[15]
+./sections/03_metodologia.tex:59: You can't use `macro parameter character #' i
+n horizontal mode.
+l.59 ... ESLint para JavaScript y StyleCop para C#
+                                                  , asegurando consistencia ...
+Sorry, but I'm not programmed to handle this case;
+I'll just pretend that you didn't ask for it.
+If you're in the wrong mode, you might be able to
+return to the right one by typing `I}' or `I$' or `I\par'.
+
+
+Package fancyhdr Warning: \headheight is too small (15.2pt): 
+(fancyhdr)                Make it at least 15.21004pt, for example:
+(fancyhdr)                \setlength{\headheight}{15.21004pt}.
+(fancyhdr)                You might also make \topmargin smaller:
+(fancyhdr)                \addtolength{\topmargin}{-0.01004pt}.
+
+[16]) (./sections/04_implementacion.tex
 \openout5 = `main_apa7.fff'.
 
-(main_apa7.fff) (/opt/texlive/texdir/texmf-dist/tex/latex/listings/lstlang1.sty
-File: lstlang1.sty 2025/11/14 1.11a listings language file
+(main_apa7.fff)
+
+Package fancyhdr Warning: \headheight is too small (15.2pt): 
+(fancyhdr)                Make it at least 15.21004pt, for example:
+(fancyhdr)                \setlength{\headheight}{15.21004pt}.
+(fancyhdr)                You might also make \topmargin smaller:
+(fancyhdr)                \addtolength{\topmargin}{-0.01004pt}.
+
+[17]
+
+Package fancyhdr Warning: \headheight is too small (15.2pt): 
+(fancyhdr)                Make it at least 15.21004pt, for example:
+(fancyhdr)                \setlength{\headheight}{15.21004pt}.
+(fancyhdr)                You might also make \topmargin smaller:
+(fancyhdr)                \addtolength{\topmargin}{-0.01004pt}.
+
+[18]
+./sections/04_implementacion.tex:114: Illegal parameter number in definition of
+ \lst@temp.
+<to be read again> 
+                   }
+l.114 \begin{lstlisting}[language=C#]
+                                     
+You meant to type ## instead of #, right?
+Or maybe a } was forgotten somewhere earlier, and things
+are all screwed up? I'm going to assume that you meant ##.
+
+./sections/04_implementacion.tex:114: Illegal parameter number in definition of
+ \@tempa.
+<to be read again> 
+                   }
+l.114 \begin{lstlisting}[language=C#]
+                                     
+You meant to type ## instead of #, right?
+Or maybe a } was forgotten somewhere earlier, and things
+are all screwed up? I'm going to assume that you meant ##.
+
+./sections/04_implementacion.tex:114: Illegal parameter number in definition of
+ \lst@malias.
+<to be read again> 
+                   }
+l.114 \begin{lstlisting}[language=C#]
+                                     
+You meant to type ## instead of #, right?
+Or maybe a } was forgotten somewhere earlier, and things
+are all screwed up? I'm going to assume that you meant ##.
+
+./sections/04_implementacion.tex:114: Illegal parameter number in definition of
+ \lst@temp.
+<to be read again> 
+                   $
+l.114 \begin{lstlisting}[language=C#]
+                                     
+You meant to type ## instead of #, right?
+Or maybe a } was forgotten somewhere earlier, and things
+are all screwed up? I'm going to assume that you meant ##.
+
+./sections/04_implementacion.tex:114: Illegal parameter number in definition of
+ \lst@malias.
+<to be read again> 
+                   }
+l.114 \begin{lstlisting}[language=C#]
+                                     
+You meant to type ## instead of #, right?
+Or maybe a } was forgotten somewhere earlier, and things
+are all screwed up? I'm going to assume that you meant ##.
+
+./sections/04_implementacion.tex:114: Illegal parameter number in definition of
+ \lst@require.
+<to be read again> 
+                   $
+l.114 \begin{lstlisting}[language=C#]
+                                     
+You meant to type ## instead of #, right?
+Or maybe a } was forgotten somewhere earlier, and things
+are all screwed up? I'm going to assume that you meant ##.
+
+(/opt/texlive/texdir/texmf-dist/tex/latex/listings/lstlang1.sty
+File: lstlang1.sty 2025/11/14 1.11b listings language file
+) (/opt/texlive/texdir/texmf-dist/tex/latex/listings/lstlang2.sty
+File: lstlang2.sty 2025/11/14 1.11b listings language file
+) (/opt/texlive/texdir/texmf-dist/tex/latex/listings/lstlang3.sty
+File: lstlang3.sty 2025/11/14 1.11b listings language file
 )
+
+./sections/04_implementacion.tex:114: Illegal parameter number in definition of
+ \@err@                                                                 .
+<to be read again> 
+                   $
+l.114 \begin{lstlisting}[language=C#]
+                                     
+You meant to type ## instead of #, right?
+Or maybe a } was forgotten somewhere earlier, and things
+are all screwed up? I'm going to assume that you meant ##.
+
+./sections/04_implementacion.tex:114: Package Listings Error: Couldn't load req
+uested language.
+
+See the Listings package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.114 \begin{lstlisting}[language=C#]
+                                     
+The following languages weren't loadable:
+    ,c##$
+This may cause errors in the sequel.
+
+./sections/04_implementacion.tex:114: Illegal parameter number in definition of
+ \lst@malias.
+<to be read again> 
+                   }
+l.114 \begin{lstlisting}[language=C#]
+                                     
+You meant to type ## instead of #, right?
+Or maybe a } was forgotten somewhere earlier, and things
+are all screwed up? I'm going to assume that you meant ##.
+
+./sections/04_implementacion.tex:114: Illegal parameter number in definition of
+ \lst@temp.
+<to be read again> 
+                   $
+l.114 \begin{lstlisting}[language=C#]
+                                     
+You meant to type ## instead of #, right?
+Or maybe a } was forgotten somewhere earlier, and things
+are all screwed up? I'm going to assume that you meant ##.
+
+./sections/04_implementacion.tex:114: Illegal parameter number in definition of
+ \lst@malias.
+<to be read again> 
+                   }
+l.114 \begin{lstlisting}[language=C#]
+                                     
+You meant to type ## instead of #, right?
+Or maybe a } was forgotten somewhere earlier, and things
+are all screwed up? I'm going to assume that you meant ##.
+
+
+./sections/04_implementacion.tex:114: Package Listings Error: language c## unde
+fined.
+
+See the Listings package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.114 \begin{lstlisting}[language=C#]
+                                     
+The language is not loadable. Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
 Package microtype Info: Loading generic protrusion settings for font family
 (microtype)             `lmtt' (encoding: TU).
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
-LaTeX Font Info:    Font shape `TU/lmtt/bx/n' in size <10.95> not available
-(Font)              Font shape `TU/lmtt/b/n' tried instead on input line 33.
-(./tables/frameworks_comparison.tex
+
+Package fancyhdr Warning: \headheight is too small (15.2pt): 
+(fancyhdr)                Make it at least 15.21004pt, for example:
+(fancyhdr)                \setlength{\headheight}{15.21004pt}.
+(fancyhdr)                You might also make \topmargin smaller:
+(fancyhdr)                \addtolength{\topmargin}{-0.01004pt}.
+
+[19]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+Package fancyhdr Warning: \headheight is too small (15.2pt): 
+(fancyhdr)                Make it at least 15.21004pt, for example:
+(fancyhdr)                \setlength{\headheight}{15.21004pt}.
+(fancyhdr)                You might also make \topmargin smaller:
+(fancyhdr)                \addtolength{\topmargin}{-0.01004pt}.
+
+[20] (./tables/frameworks_comparison.tex
 \openout4 = `main_apa7.ttt'.
 
 (main_apa7.ttt))) (./sections/05_resultados.tex
@@ -1365,8 +1628,41 @@ Package fancyhdr Warning: \headheight is too small (15.2pt):
 (fancyhdr)                You might also make \topmargin smaller:
 (fancyhdr)                \addtolength{\topmargin}{-0.01004pt}.
 
-[10]) (./sections/06_discusion.tex
-Underfull \vbox (badness 1087) has occurred while \output is active []
+[21]
+
+Package fancyhdr Warning: \headheight is too small (15.2pt): 
+(fancyhdr)                Make it at least 15.21004pt, for example:
+(fancyhdr)                \setlength{\headheight}{15.21004pt}.
+(fancyhdr)                You might also make \topmargin smaller:
+(fancyhdr)                \addtolength{\topmargin}{-0.01004pt}.
+
+[22]
+
+Package fancyhdr Warning: \headheight is too small (15.2pt): 
+(fancyhdr)                Make it at least 15.21004pt, for example:
+(fancyhdr)                \setlength{\headheight}{15.21004pt}.
+(fancyhdr)                You might also make \topmargin smaller:
+(fancyhdr)                \addtolength{\topmargin}{-0.01004pt}.
+
+[23]
+./sections/05_resultados.tex:58: Missing $ inserted.
+<inserted text> 
+                $
+l.58 
+     
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+Missing character: There is no ñ ("F1) in font lmmi12!
+Missing character: There is no ó ("F3) in font lmmi12!
+Missing character: There is no é ("E9) in font lmmi12!
+./sections/05_resultados.tex:67: Missing $ inserted.
+<inserted text> 
+                $
+l.67 
+     
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
 
 
 Package fancyhdr Warning: \headheight is too small (15.2pt): 
@@ -1375,7 +1671,52 @@ Package fancyhdr Warning: \headheight is too small (15.2pt):
 (fancyhdr)                You might also make \topmargin smaller:
 (fancyhdr)                \addtolength{\topmargin}{-0.01004pt}.
 
-[11]
+[24]
+./sections/05_resultados.tex:73: Missing $ inserted.
+<inserted text> 
+                $
+l.73 
+     
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+Missing character: There is no ó ("F3) in font lmmi12!
+Missing character: There is no ó ("F3) in font lmmi12!
+Missing character: There is no ó ("F3) in font lmmi12!
+
+Overfull \hbox (232.8412pt too wide) in paragraph at lines 72--73
+\OT1/lmr/m/n/12 150[]000\OML/lmm/m/it/12 enrecuperacionesdecapital; ylapredicci
+ndedemandabasadaendatoshistricosmejorlaeficienciadelacadenadesuministroenun\OT1
+/lmr/m/n/12 25 %[]\OML/lmm/m/it/12 :$  
+ []
+
+./sections/05_resultados.tex:81: Missing $ inserted.
+<inserted text> 
+                $
+l.81 
+     
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+./sections/05_resultados.tex:83: Missing $ inserted.
+<inserted text> 
+                $
+l.83 
+     
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+Missing character: There is no ñ ("F1) in font lmmi12!
+./sections/05_resultados.tex:88: Missing $ inserted.
+<inserted text> 
+                $
+l.88 
+     
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+Missing character: There is no ñ ("F1) in font lmmi12!
+) (./sections/06_discusion.tex
 
 Package fancyhdr Warning: \headheight is too small (15.2pt): 
 (fancyhdr)                Make it at least 15.21004pt, for example:
@@ -1383,8 +1724,67 @@ Package fancyhdr Warning: \headheight is too small (15.2pt):
 (fancyhdr)                You might also make \topmargin smaller:
 (fancyhdr)                \addtolength{\topmargin}{-0.01004pt}.
 
-[12]
-Underfull \vbox (badness 1867) has occurred while \output is active []
+[25]
+
+Package fancyhdr Warning: \headheight is too small (15.2pt): 
+(fancyhdr)                Make it at least 15.21004pt, for example:
+(fancyhdr)                \setlength{\headheight}{15.21004pt}.
+(fancyhdr)                You might also make \topmargin smaller:
+(fancyhdr)                \addtolength{\topmargin}{-0.01004pt}.
+
+[26]
+./sections/06_discusion.tex:30: Missing $ inserted.
+<inserted text> 
+                $
+l.30 
+     
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+Missing character: There is no ó ("F3) in font lmmi12!
+./sections/06_discusion.tex:32: Missing $ inserted.
+<inserted text> 
+                $
+l.32 
+     
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+Missing character: There is no ó ("F3) in font lmmi12!
+Missing character: There is no é ("E9) in font lmmi12!
+
+Package fancyhdr Warning: \headheight is too small (15.2pt): 
+(fancyhdr)                Make it at least 15.21004pt, for example:
+(fancyhdr)                \setlength{\headheight}{15.21004pt}.
+(fancyhdr)                You might also make \topmargin smaller:
+(fancyhdr)                \addtolength{\topmargin}{-0.01004pt}.
+
+[27]
+
+Package fancyhdr Warning: \headheight is too small (15.2pt): 
+(fancyhdr)                Make it at least 15.21004pt, for example:
+(fancyhdr)                \setlength{\headheight}{15.21004pt}.
+(fancyhdr)                You might also make \topmargin smaller:
+(fancyhdr)                \addtolength{\topmargin}{-0.01004pt}.
+
+[28]
+
+Package fancyhdr Warning: \headheight is too small (15.2pt): 
+(fancyhdr)                Make it at least 15.21004pt, for example:
+(fancyhdr)                \setlength{\headheight}{15.21004pt}.
+(fancyhdr)                You might also make \topmargin smaller:
+(fancyhdr)                \addtolength{\topmargin}{-0.01004pt}.
+
+[29]) (./sections/07_conclusiones.tex
+
+Package fancyhdr Warning: \headheight is too small (15.2pt): 
+(fancyhdr)                Make it at least 15.21004pt, for example:
+(fancyhdr)                \setlength{\headheight}{15.21004pt}.
+(fancyhdr)                You might also make \topmargin smaller:
+(fancyhdr)                \addtolength{\topmargin}{-0.01004pt}.
+
+[30]
+Underfull \vbox (badness 1406) has occurred while \output is active []
 
 
 Package fancyhdr Warning: \headheight is too small (15.2pt): 
@@ -1393,7 +1793,7 @@ Package fancyhdr Warning: \headheight is too small (15.2pt):
 (fancyhdr)                You might also make \topmargin smaller:
 (fancyhdr)                \addtolength{\topmargin}{-0.01004pt}.
 
-[13]) (./sections/07_conclusiones.tex
+[31]
 
 Package fancyhdr Warning: \headheight is too small (15.2pt): 
 (fancyhdr)                Make it at least 15.21004pt, for example:
@@ -1401,7 +1801,7 @@ Package fancyhdr Warning: \headheight is too small (15.2pt):
 (fancyhdr)                You might also make \topmargin smaller:
 (fancyhdr)                \addtolength{\topmargin}{-0.01004pt}.
 
-[14]) (./sections/A1_apendices.tex
+[32]) (./sections/A1_apendices.tex
 
 Package fancyhdr Warning: \headheight is too small (15.2pt): 
 (fancyhdr)                Make it at least 15.21004pt, for example:
@@ -1409,7 +1809,7 @@ Package fancyhdr Warning: \headheight is too small (15.2pt):
 (fancyhdr)                You might also make \topmargin smaller:
 (fancyhdr)                \addtolength{\topmargin}{-0.01004pt}.
 
-[15] (build/main_apa7.ttt
+[33] (build/main_apa7.ttt
 LaTeX Font Info:    External font `lmex10' loaded for size
 (Font)              <10.95> on input line 8.
 )
@@ -1420,7 +1820,7 @@ Package fancyhdr Warning: \headheight is too small (15.2pt):
 (fancyhdr)                You might also make \topmargin smaller:
 (fancyhdr)                \addtolength{\topmargin}{-0.01004pt}.
 
-[16
+[34
 
 ] (build/main_apa7.fff
 File: graphics/correlacion_devops.pdf Graphic file (type pdf)
@@ -1433,17 +1833,7 @@ Package fancyhdr Warning: \headheight is too small (15.2pt):
 (fancyhdr)                You might also make \topmargin smaller:
 (fancyhdr)                \addtolength{\topmargin}{-0.01004pt}.
 
-[17
-
-])
-
-Package fancyhdr Warning: \headheight is too small (15.2pt): 
-(fancyhdr)                Make it at least 15.21004pt, for example:
-(fancyhdr)                \setlength{\headheight}{15.21004pt}.
-(fancyhdr)                You might also make \topmargin smaller:
-(fancyhdr)                \addtolength{\topmargin}{-0.01004pt}.
-
-[18
+[35
 
 ]
 
@@ -1453,7 +1843,551 @@ Package fancyhdr Warning: \headheight is too small (15.2pt):
 (fancyhdr)                You might also make \topmargin smaller:
 (fancyhdr)                \addtolength{\topmargin}{-0.01004pt}.
 
-[19
+[36
+
+]
+
+LaTeX Warning: File `graphics/clean_architecture_diagram.pdf' not found on inpu
+t line 16.
+
+./sections/A1_apendices.tex:16: Unable to load picture or PDF file 'graphics/cl
+ean_architecture_diagram.pdf'.
+<to be read again> 
+                   }
+l.16 ...]{graphics/clean_architecture_diagram.pdf}
+                                                  
+The requested image couldn't be read because
+it was not a recognized image format.
+
+
+./sections/A1_apendices.tex:16: Package graphics Error: Division by 0.
+
+See the graphics package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.16 ...]{graphics/clean_architecture_diagram.pdf}
+                                                  
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+File: graphics/clean_architecture_diagram.pdf Graphic file (type pdf)
+<use graphics/clean_architecture_diagram.pdf>
+./sections/A1_apendices.tex:16: Unable to load picture or PDF file 'graphics/cl
+ean_architecture_diagram.pdf'.
+<to be read again> 
+                   \GPT@clipend 
+l.16 ...]{graphics/clean_architecture_diagram.pdf}
+                                                  
+The requested image couldn't be read because
+it was not a recognized image format.
+
+
+LaTeX Warning: File `graphics/data_flow_diagram.pdf' not found on input line 24
+.
+
+./sections/A1_apendices.tex:24: Unable to load picture or PDF file 'graphics/da
+ta_flow_diagram.pdf'.
+<to be read again> 
+                   }
+l.24 ...textwidth]{graphics/data_flow_diagram.pdf}
+                                                  
+The requested image couldn't be read because
+it was not a recognized image format.
+
+
+./sections/A1_apendices.tex:24: Package graphics Error: Division by 0.
+
+See the graphics package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.24 ...textwidth]{graphics/data_flow_diagram.pdf}
+                                                  
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+File: graphics/data_flow_diagram.pdf Graphic file (type pdf)
+<use graphics/data_flow_diagram.pdf>
+./sections/A1_apendices.tex:24: Unable to load picture or PDF file 'graphics/da
+ta_flow_diagram.pdf'.
+<to be read again> 
+                   \GPT@clipend 
+l.24 ...textwidth]{graphics/data_flow_diagram.pdf}
+                                                  
+The requested image couldn't be read because
+it was not a recognized image format.
+
+
+Package fancyhdr Warning: \headheight is too small (15.2pt): 
+(fancyhdr)                Make it at least 15.21004pt, for example:
+(fancyhdr)                \setlength{\headheight}{15.21004pt}.
+(fancyhdr)                You might also make \topmargin smaller:
+(fancyhdr)                \addtolength{\topmargin}{-0.01004pt}.
+
+[37
+
+]
+./sections/A1_apendices.tex:54: Illegal parameter number in definition of \lst@
+temp.
+<to be read again> 
+                   }
+l.54 \begin{lstlisting}[language=C#]
+                                    
+You meant to type ## instead of #, right?
+Or maybe a } was forgotten somewhere earlier, and things
+are all screwed up? I'm going to assume that you meant ##.
+
+./sections/A1_apendices.tex:54: Illegal parameter number in definition of \@tem
+pa.
+<to be read again> 
+                   }
+l.54 \begin{lstlisting}[language=C#]
+                                    
+You meant to type ## instead of #, right?
+Or maybe a } was forgotten somewhere earlier, and things
+are all screwed up? I'm going to assume that you meant ##.
+
+./sections/A1_apendices.tex:54: Illegal parameter number in definition of \lst@
+malias.
+<to be read again> 
+                   }
+l.54 \begin{lstlisting}[language=C#]
+                                    
+You meant to type ## instead of #, right?
+Or maybe a } was forgotten somewhere earlier, and things
+are all screwed up? I'm going to assume that you meant ##.
+
+./sections/A1_apendices.tex:54: Illegal parameter number in definition of \lst@
+temp.
+<to be read again> 
+                   $
+l.54 \begin{lstlisting}[language=C#]
+                                    
+You meant to type ## instead of #, right?
+Or maybe a } was forgotten somewhere earlier, and things
+are all screwed up? I'm going to assume that you meant ##.
+
+./sections/A1_apendices.tex:54: Illegal parameter number in definition of \lst@
+malias.
+<to be read again> 
+                   }
+l.54 \begin{lstlisting}[language=C#]
+                                    
+You meant to type ## instead of #, right?
+Or maybe a } was forgotten somewhere earlier, and things
+are all screwed up? I'm going to assume that you meant ##.
+
+./sections/A1_apendices.tex:54: Illegal parameter number in definition of \lst@
+require.
+<to be read again> 
+                   $
+l.54 \begin{lstlisting}[language=C#]
+                                    
+You meant to type ## instead of #, right?
+Or maybe a } was forgotten somewhere earlier, and things
+are all screwed up? I'm going to assume that you meant ##.
+
+(/opt/texlive/texdir/texmf-dist/tex/latex/listings/lstlang1.sty
+File: lstlang1.sty 2025/11/14 1.11b listings language file
+) (/opt/texlive/texdir/texmf-dist/tex/latex/listings/lstlang2.sty
+File: lstlang2.sty 2025/11/14 1.11b listings language file
+) (/opt/texlive/texdir/texmf-dist/tex/latex/listings/lstlang3.sty
+File: lstlang3.sty 2025/11/14 1.11b listings language file
+)
+
+./sections/A1_apendices.tex:54: Illegal parameter number in definition of \@err
+@                                                                 .
+<to be read again> 
+                   $
+l.54 \begin{lstlisting}[language=C#]
+                                    
+You meant to type ## instead of #, right?
+Or maybe a } was forgotten somewhere earlier, and things
+are all screwed up? I'm going to assume that you meant ##.
+
+./sections/A1_apendices.tex:54: Package Listings Error: Couldn't load requested
+ language.
+
+See the Listings package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.54 \begin{lstlisting}[language=C#]
+                                    
+The following languages weren't loadable:
+    ,c##$
+This may cause errors in the sequel.
+
+./sections/A1_apendices.tex:54: Illegal parameter number in definition of \lst@
+malias.
+<to be read again> 
+                   }
+l.54 \begin{lstlisting}[language=C#]
+                                    
+You meant to type ## instead of #, right?
+Or maybe a } was forgotten somewhere earlier, and things
+are all screwed up? I'm going to assume that you meant ##.
+
+./sections/A1_apendices.tex:54: Illegal parameter number in definition of \lst@
+temp.
+<to be read again> 
+                   $
+l.54 \begin{lstlisting}[language=C#]
+                                    
+You meant to type ## instead of #, right?
+Or maybe a } was forgotten somewhere earlier, and things
+are all screwed up? I'm going to assume that you meant ##.
+
+./sections/A1_apendices.tex:54: Illegal parameter number in definition of \lst@
+malias.
+<to be read again> 
+                   }
+l.54 \begin{lstlisting}[language=C#]
+                                    
+You meant to type ## instead of #, right?
+Or maybe a } was forgotten somewhere earlier, and things
+are all screwed up? I'm going to assume that you meant ##.
+
+
+./sections/A1_apendices.tex:54: Package Listings Error: language c## undefined.
+
+
+See the Listings package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.54 \begin{lstlisting}[language=C#]
+                                    
+The language is not loadable. Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+./sections/A1_apendices.tex:113: Illegal parameter number in definition of \lst
+@temp.
+<to be read again> 
+                   }
+l.113 \begin{lstlisting}[language=C#]
+                                     
+You meant to type ## instead of #, right?
+Or maybe a } was forgotten somewhere earlier, and things
+are all screwed up? I'm going to assume that you meant ##.
+
+./sections/A1_apendices.tex:113: Illegal parameter number in definition of \@te
+mpa.
+<to be read again> 
+                   }
+l.113 \begin{lstlisting}[language=C#]
+                                     
+You meant to type ## instead of #, right?
+Or maybe a } was forgotten somewhere earlier, and things
+are all screwed up? I'm going to assume that you meant ##.
+
+./sections/A1_apendices.tex:113: Illegal parameter number in definition of \lst
+@malias.
+<to be read again> 
+                   }
+l.113 \begin{lstlisting}[language=C#]
+                                     
+You meant to type ## instead of #, right?
+Or maybe a } was forgotten somewhere earlier, and things
+are all screwed up? I'm going to assume that you meant ##.
+
+./sections/A1_apendices.tex:113: Illegal parameter number in definition of \lst
+@temp.
+<to be read again> 
+                   $
+l.113 \begin{lstlisting}[language=C#]
+                                     
+You meant to type ## instead of #, right?
+Or maybe a } was forgotten somewhere earlier, and things
+are all screwed up? I'm going to assume that you meant ##.
+
+./sections/A1_apendices.tex:113: Illegal parameter number in definition of \lst
+@malias.
+<to be read again> 
+                   }
+l.113 \begin{lstlisting}[language=C#]
+                                     
+You meant to type ## instead of #, right?
+Or maybe a } was forgotten somewhere earlier, and things
+are all screwed up? I'm going to assume that you meant ##.
+
+./sections/A1_apendices.tex:113: Illegal parameter number in definition of \lst
+@require.
+<to be read again> 
+                   $
+l.113 \begin{lstlisting}[language=C#]
+                                     
+You meant to type ## instead of #, right?
+Or maybe a } was forgotten somewhere earlier, and things
+are all screwed up? I'm going to assume that you meant ##.
+
+(/opt/texlive/texdir/texmf-dist/tex/latex/listings/lstlang1.sty
+File: lstlang1.sty 2025/11/14 1.11b listings language file
+) (/opt/texlive/texdir/texmf-dist/tex/latex/listings/lstlang2.sty
+File: lstlang2.sty 2025/11/14 1.11b listings language file
+) (/opt/texlive/texdir/texmf-dist/tex/latex/listings/lstlang3.sty
+File: lstlang3.sty 2025/11/14 1.11b listings language file
+)
+
+./sections/A1_apendices.tex:113: Illegal parameter number in definition of \@er
+r@                                                                 .
+<to be read again> 
+                   $
+l.113 \begin{lstlisting}[language=C#]
+                                     
+You meant to type ## instead of #, right?
+Or maybe a } was forgotten somewhere earlier, and things
+are all screwed up? I'm going to assume that you meant ##.
+
+./sections/A1_apendices.tex:113: Package Listings Error: Couldn't load requeste
+d language.
+
+See the Listings package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.113 \begin{lstlisting}[language=C#]
+                                     
+The following languages weren't loadable:
+    ,c##$
+This may cause errors in the sequel.
+
+./sections/A1_apendices.tex:113: Illegal parameter number in definition of \lst
+@malias.
+<to be read again> 
+                   }
+l.113 \begin{lstlisting}[language=C#]
+                                     
+You meant to type ## instead of #, right?
+Or maybe a } was forgotten somewhere earlier, and things
+are all screwed up? I'm going to assume that you meant ##.
+
+./sections/A1_apendices.tex:113: Illegal parameter number in definition of \lst
+@temp.
+<to be read again> 
+                   $
+l.113 \begin{lstlisting}[language=C#]
+                                     
+You meant to type ## instead of #, right?
+Or maybe a } was forgotten somewhere earlier, and things
+are all screwed up? I'm going to assume that you meant ##.
+
+./sections/A1_apendices.tex:113: Illegal parameter number in definition of \lst
+@malias.
+<to be read again> 
+                   }
+l.113 \begin{lstlisting}[language=C#]
+                                     
+You meant to type ## instead of #, right?
+Or maybe a } was forgotten somewhere earlier, and things
+are all screwed up? I'm going to assume that you meant ##.
+
+
+./sections/A1_apendices.tex:113: Package Listings Error: language c## undefined
+.
+
+See the Listings package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.113 \begin{lstlisting}[language=C#]
+                                     
+The language is not loadable. Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+Package fancyhdr Warning: \headheight is too small (15.2pt): 
+(fancyhdr)                Make it at least 15.21004pt, for example:
+(fancyhdr)                \setlength{\headheight}{15.21004pt}.
+(fancyhdr)                You might also make \topmargin smaller:
+(fancyhdr)                \addtolength{\topmargin}{-0.01004pt}.
+
+[38
+
+]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+Package fancyhdr Warning: \headheight is too small (15.2pt): 
+(fancyhdr)                Make it at least 15.21004pt, for example:
+(fancyhdr)                \setlength{\headheight}{15.21004pt}.
+(fancyhdr)                You might also make \topmargin smaller:
+(fancyhdr)                \addtolength{\topmargin}{-0.01004pt}.
+
+[39]
+
+Package fancyhdr Warning: \headheight is too small (15.2pt): 
+(fancyhdr)                Make it at least 15.21004pt, for example:
+(fancyhdr)                \setlength{\headheight}{15.21004pt}.
+(fancyhdr)                You might also make \topmargin smaller:
+(fancyhdr)                \addtolength{\topmargin}{-0.01004pt}.
+
+[40]
+./sections/A1_apendices.tex:159: Undefined control sequence.
+l.159 ...spuesta API & 150ms & <200ms & \checkmark
+                                                   \\
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+./sections/A1_apendices.tex:161: Undefined control sequence.
+l.161 ...carga app móvil & 2.5s & <3s & \checkmark
+                                                   \\
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+./sections/A1_apendices.tex:163: Undefined control sequence.
+l.163 ...l sistema & 99.9\% & >99.5\% & \checkmark
+                                                   \\
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+./sections/A1_apendices.tex:165: Undefined control sequence.
+l.165 ...ra de pruebas & 85\% & >80\% & \checkmark
+                                                   \\
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+Package fancyhdr Warning: \headheight is too small (15.2pt): 
+(fancyhdr)                Make it at least 15.21004pt, for example:
+(fancyhdr)                \setlength{\headheight}{15.21004pt}.
+(fancyhdr)                You might also make \topmargin smaller:
+(fancyhdr)                \addtolength{\topmargin}{-0.01004pt}.
+
+[41
+
+]
+./sections/A1_apendices.tex:187: Misplaced alignment tab character &.
+<argument> cd client &
+                      & npm install && npm run build
+l.187 ...d client && npm install && npm run build}
+                                                  
+I can't figure out why you would want to use a tab mark
+here. If you just want an ampersand, the remedy is
+simple: Just type `I\&' now. But if some right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+./sections/A1_apendices.tex:187: Misplaced alignment tab character &.
+<argument> cd client &&
+                        npm install && npm run build
+l.187 ...d client && npm install && npm run build}
+                                                  
+I can't figure out why you would want to use a tab mark
+here. If you just want an ampersand, the remedy is
+simple: Just type `I\&' now. But if some right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+./sections/A1_apendices.tex:187: Misplaced alignment tab character &.
+<argument> cd client && npm install &
+                                     & npm run build
+l.187 ...d client && npm install && npm run build}
+                                                  
+I can't figure out why you would want to use a tab mark
+here. If you just want an ampersand, the remedy is
+simple: Just type `I\&' now. But if some right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+./sections/A1_apendices.tex:187: Misplaced alignment tab character &.
+<argument> cd client && npm install &&
+                                       npm run build
+l.187 ...d client && npm install && npm run build}
+                                                  
+I can't figure out why you would want to use a tab mark
+here. If you just want an ampersand, the remedy is
+simple: Just type `I\&' now. But if some right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+
+Package fancyhdr Warning: \headheight is too small (15.2pt): 
+(fancyhdr)                Make it at least 15.21004pt, for example:
+(fancyhdr)                \setlength{\headheight}{15.21004pt}.
+(fancyhdr)                You might also make \topmargin smaller:
+(fancyhdr)                \addtolength{\topmargin}{-0.01004pt}.
+
+[42
+
+]
+
+Package fancyhdr Warning: \headheight is too small (15.2pt): 
+(fancyhdr)                Make it at least 15.21004pt, for example:
+(fancyhdr)                \setlength{\headheight}{15.21004pt}.
+(fancyhdr)                You might also make \topmargin smaller:
+(fancyhdr)                \addtolength{\topmargin}{-0.01004pt}.
+
+[43
+
+]
+
+Package fancyhdr Warning: \headheight is too small (15.2pt): 
+(fancyhdr)                Make it at least 15.21004pt, for example:
+(fancyhdr)                \setlength{\headheight}{15.21004pt}.
+(fancyhdr)                You might also make \topmargin smaller:
+(fancyhdr)                \addtolength{\topmargin}{-0.01004pt}.
+
+[44
+
+]
+
+Package fancyhdr Warning: \headheight is too small (15.2pt): 
+(fancyhdr)                Make it at least 15.21004pt, for example:
+(fancyhdr)                \setlength{\headheight}{15.21004pt}.
+(fancyhdr)                You might also make \topmargin smaller:
+(fancyhdr)                \addtolength{\topmargin}{-0.01004pt}.
+
+[45
+
+]
+
+Package fancyhdr Warning: \headheight is too small (15.2pt): 
+(fancyhdr)                Make it at least 15.21004pt, for example:
+(fancyhdr)                \setlength{\headheight}{15.21004pt}.
+(fancyhdr)                You might also make \topmargin smaller:
+(fancyhdr)                \addtolength{\topmargin}{-0.01004pt}.
+
+[46
+
+])
+
+Package fancyhdr Warning: \headheight is too small (15.2pt): 
+(fancyhdr)                Make it at least 15.21004pt, for example:
+(fancyhdr)                \setlength{\headheight}{15.21004pt}.
+(fancyhdr)                You might also make \topmargin smaller:
+(fancyhdr)                \addtolength{\topmargin}{-0.01004pt}.
+
+[47
+
+]
+
+Package fancyhdr Warning: \headheight is too small (15.2pt): 
+(fancyhdr)                Make it at least 15.21004pt, for example:
+(fancyhdr)                \setlength{\headheight}{15.21004pt}.
+(fancyhdr)                You might also make \topmargin smaller:
+(fancyhdr)                \addtolength{\topmargin}{-0.01004pt}.
+
+[48
 
 
 ] AED endfloat: Processing end Figures and Tables
@@ -1464,7 +2398,7 @@ Package fancyhdr Warning: \headheight is too small (15.2pt):
 (fancyhdr)                You might also make \topmargin smaller:
 (fancyhdr)                \addtolength{\topmargin}{-0.01004pt}.
 
-[20] (build/main_apa7.aux
+[49] (build/main_apa7.aux
 LaTeX Info: Redefining \sptext on input line 12.
 LaTeX Info: Redefining \. on input line 12.
 LaTeX Info: Redefining \% on input line 12.
@@ -1474,18 +2408,18 @@ LaTeX2e <2025-11-01>
 L3 programming layer <2025-11-06>
  ***********
 Package rerunfilecheck Info: File `main_apa7.out' has not changed.
-(rerunfilecheck)             Checksum: A999863FB51A5F4BA5F450A1C49D65B8;6645.
+(rerunfilecheck)             Checksum: 08612A03877E761E0DD8A797DA13080D;15329.
 Package logreq Info: Writing requests to 'main_apa7.run.xml'.
 \openout1 = `main_apa7.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 43654 strings out of 468179
- 926947 string characters out of 5435042
- 1917682 words of memory out of 5000000
- 71785 multiletter control sequences out of 15000+600000
+ 43697 strings out of 468179
+ 932072 string characters out of 5435042
+ 2001105 words of memory out of 5000000
+ 71808 multiletter control sequences out of 15000+600000
  660197 words of font info for 77 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
- 99i,12n,118p,1006b,5599s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 99i,12n,118p,1178b,5599s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
-Output written on build/main_apa7.xdv (20 pages, 297192 bytes).
+Output written on build/main_apa7.xdv (49 pages, 743112 bytes).

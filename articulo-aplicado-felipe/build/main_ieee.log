@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999997 (TeX Live 2025) (preloaded format=xelatex 2025.11.20)  29 NOV 2025 08:12
+This is XeTeX, Version 3.141592653-2.6-0.999997 (TeX Live 2025) (preloaded format=xelatex 2025.11.22)  13 DEC 2025 04:38
 entering extended mode
  \write18 enabled.
  file:line:error style messages enabled.
@@ -460,21 +460,21 @@ Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
 \lst@lineno=\count354
 \lst@maxwidth=\dimen272
 (/opt/texlive/texdir/texmf-dist/tex/latex/listings/lstpatch.sty
-File: lstpatch.sty 2025/11/14 1.11a (Carsten Heinz)
+File: lstpatch.sty 2025/11/14 1.11b (Carsten Heinz)
 ) (/opt/texlive/texdir/texmf-dist/tex/latex/listings/lstmisc.sty
-File: lstmisc.sty 2025/11/14 1.11a (Carsten Heinz)
+File: lstmisc.sty 2025/11/14 1.11b (Carsten Heinz)
 \c@lstnumber=\count355
 \lst@skipnumbers=\count356
 \lst@framebox=\box69
 ) (/opt/texlive/texdir/texmf-dist/tex/latex/listings/listings.cfg
-File: listings.cfg 2025/11/14 1.11a listings configuration
+File: listings.cfg 2025/11/14 1.11b listings configuration
 ))
-Package: listings 2025/11/14 1.11a (Carsten Heinz)
+Package: listings 2025/11/14 1.11b (Carsten Heinz)
 ==> First Aid for listings.sty no longer applied!
     Expected:
         2024/09/23 1.10c (Carsten Heinz)
     but found:
-        2025/11/14 1.11a (Carsten Heinz)
+        2025/11/14 1.11b (Carsten Heinz)
     so I'm assuming it got fixed.
 ) (./includes/preamble_ieee.tex (/opt/texlive/texdir/texmf-dist/tex/latex/bibla
 tex/biblatex.sty
@@ -907,37 +907,189 @@ Overfull \hbox (15.0811pt too wide) in paragraph at lines 16--16
  [] 
  []
 
-(./sections/00_abstract.tex) (./sections/01_introduccion.tex) (./sections/02_re
-lacionados.tex
-Underfull \vbox (badness 1661) has occurred while \output is active []
-
-[1
+(./sections/00_abstract.tex) (./sections/01_introduccion.tex [1
 
 
-]) (./sections/03_metodologia.tex [2]) (./sections/04_implementacion.tex
-Underfull \hbox (badness 2310) in paragraph at lines 2--3
-\TU/lmr/m/it/10 pelines\TU/ptm/bx/it/10 . Documentamos prácticas aplicadas: for
-mateo,
- []
+]) (./sections/02_relacionados.tex [2]
+./sections/02_relacionados.tex:25: You can't use `macro parameter character #' 
+in horizontal mode.
+l.25 ... el enfoque funcional de lenguajes como F#
+                                                   o Scala, pero optamos por...
+Sorry, but I'm not programmed to handle this case;
+I'll just pretend that you didn't ask for it.
+If you're in the wrong mode, you might be able to
+return to the right one by typing `I}' or `I$' or `I\par'.
 
+./sections/02_relacionados.tex:25: You can't use `macro parameter character #' 
+in horizontal mode.
+l.25 ...uajes como F# o Scala, pero optamos por C#
+                                                   por su madurez en el ecos...
+Sorry, but I'm not programmed to handle this case;
+I'll just pretend that you didn't ask for it.
+If you're in the wrong mode, you might be able to
+return to the right one by typing `I}' or `I$' or `I\par'.
 
-Underfull \hbox (badness 1418) in paragraph at lines 2--3
-\TU/lmr/m/it/10 linting\TU/ptm/bx/it/10 , pruebas unitarias/integración, anális
-is estático
- []
+./sections/02_relacionados.tex:34: Missing $ inserted.
+<inserted text> 
+                $
+l.34 
+     
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
 
+[3]) (./sections/03_metodologia.tex [4]
+./sections/03_metodologia.tex:59: You can't use `macro parameter character #' i
+n horizontal mode.
+l.59 ... ESLint para JavaScript y StyleCop para C#
+                                                  , asegurando consistencia ...
+Sorry, but I'm not programmed to handle this case;
+I'll just pretend that you didn't ask for it.
+If you're in the wrong mode, you might be able to
+return to the right one by typing `I}' or `I$' or `I\par'.
+
+[5]) (./sections/04_implementacion.tex
 File: graphics/correlacion_devops.pdf Graphic file (type pdf)
 <use graphics/correlacion_devops.pdf>
+[6]
+./sections/04_implementacion.tex:114: Illegal parameter number in definition of
+ \lst@temp.
+<to be read again> 
+                   }
+l.114 \begin{lstlisting}[language=C#]
+                                     
+You meant to type ## instead of #, right?
+Or maybe a } was forgotten somewhere earlier, and things
+are all screwed up? I'm going to assume that you meant ##.
+
+./sections/04_implementacion.tex:114: Illegal parameter number in definition of
+ \@tempa.
+<to be read again> 
+                   }
+l.114 \begin{lstlisting}[language=C#]
+                                     
+You meant to type ## instead of #, right?
+Or maybe a } was forgotten somewhere earlier, and things
+are all screwed up? I'm going to assume that you meant ##.
+
+./sections/04_implementacion.tex:114: Illegal parameter number in definition of
+ \lst@malias.
+<to be read again> 
+                   }
+l.114 \begin{lstlisting}[language=C#]
+                                     
+You meant to type ## instead of #, right?
+Or maybe a } was forgotten somewhere earlier, and things
+are all screwed up? I'm going to assume that you meant ##.
+
+./sections/04_implementacion.tex:114: Illegal parameter number in definition of
+ \lst@temp.
+<to be read again> 
+                   $
+l.114 \begin{lstlisting}[language=C#]
+                                     
+You meant to type ## instead of #, right?
+Or maybe a } was forgotten somewhere earlier, and things
+are all screwed up? I'm going to assume that you meant ##.
+
+./sections/04_implementacion.tex:114: Illegal parameter number in definition of
+ \lst@malias.
+<to be read again> 
+                   }
+l.114 \begin{lstlisting}[language=C#]
+                                     
+You meant to type ## instead of #, right?
+Or maybe a } was forgotten somewhere earlier, and things
+are all screwed up? I'm going to assume that you meant ##.
+
+./sections/04_implementacion.tex:114: Illegal parameter number in definition of
+ \lst@require.
+<to be read again> 
+                   $
+l.114 \begin{lstlisting}[language=C#]
+                                     
+You meant to type ## instead of #, right?
+Or maybe a } was forgotten somewhere earlier, and things
+are all screwed up? I'm going to assume that you meant ##.
+
 (/opt/texlive/texdir/texmf-dist/tex/latex/listings/lstlang1.sty
-File: lstlang1.sty 2025/11/14 1.11a listings language file
+File: lstlang1.sty 2025/11/14 1.11b listings language file
+) (/opt/texlive/texdir/texmf-dist/tex/latex/listings/lstlang2.sty
+File: lstlang2.sty 2025/11/14 1.11b listings language file
+) (/opt/texlive/texdir/texmf-dist/tex/latex/listings/lstlang3.sty
+File: lstlang3.sty 2025/11/14 1.11b listings language file
 )
+
+./sections/04_implementacion.tex:114: Illegal parameter number in definition of
+ \@err@                                                                 .
+<to be read again> 
+                   $
+l.114 \begin{lstlisting}[language=C#]
+                                     
+You meant to type ## instead of #, right?
+Or maybe a } was forgotten somewhere earlier, and things
+are all screwed up? I'm going to assume that you meant ##.
+
+./sections/04_implementacion.tex:114: Package Listings Error: Couldn't load req
+uested language.
+
+See the Listings package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.114 \begin{lstlisting}[language=C#]
+                                     
+The following languages weren't loadable:
+    ,c##$
+This may cause errors in the sequel.
+
+./sections/04_implementacion.tex:114: Illegal parameter number in definition of
+ \lst@malias.
+<to be read again> 
+                   }
+l.114 \begin{lstlisting}[language=C#]
+                                     
+You meant to type ## instead of #, right?
+Or maybe a } was forgotten somewhere earlier, and things
+are all screwed up? I'm going to assume that you meant ##.
+
+./sections/04_implementacion.tex:114: Illegal parameter number in definition of
+ \lst@temp.
+<to be read again> 
+                   $
+l.114 \begin{lstlisting}[language=C#]
+                                     
+You meant to type ## instead of #, right?
+Or maybe a } was forgotten somewhere earlier, and things
+are all screwed up? I'm going to assume that you meant ##.
+
+./sections/04_implementacion.tex:114: Illegal parameter number in definition of
+ \lst@malias.
+<to be read again> 
+                   }
+l.114 \begin{lstlisting}[language=C#]
+                                     
+You meant to type ## instead of #, right?
+Or maybe a } was forgotten somewhere earlier, and things
+are all screwed up? I'm going to assume that you meant ##.
+
+
+./sections/04_implementacion.tex:114: Package Listings Error: language c## unde
+fined.
+
+See the Listings package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.114 \begin{lstlisting}[language=C#]
+                                     
+The language is not loadable. Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
 Package microtype Info: Loading generic protrusion settings for font family
 (microtype)             `lmtt' (encoding: TU).
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
-LaTeX Font Info:    Font shape `TU/lmtt/bx/n' in size <9> not available
-(Font)              Font shape `TU/lmtt/b/n' tried instead on input line 33.
-[3] (./tables/frameworks_comparison.tex
+(./tables/frameworks_comparison.tex
 LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <9> on input line 6.
 
@@ -945,10 +1097,664 @@ Overfull \hbox (4.64706pt too wide) in paragraph at lines 6--19
  [][] 
  []
 
-)) (./sections/05_resultados.tex) (./sections/06_discusion.tex [4]) (./sections
-/07_conclusiones.tex [5]) (./sections/A1_apendices.tex
+) [7]) (./sections/05_resultados.tex
+Underfull \hbox (badness 2142) in paragraph at lines 19--20
+[]\TU/ptm/bx/it/10 - **Productividad de auditorías**: Incremento del
+ []
+
+./sections/05_resultados.tex:58: Missing $ inserted.
+<inserted text> 
+                $
+l.58 
+     
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+Missing character: There is no ñ ("F1) in font cmmi10!
+Missing character: There is no ó ("F3) in font cmmi10!
+Missing character: There is no é ("E9) in font cmmi10!
+
+Underfull \hbox (badness 10000) in paragraph at lines 57--58
+[]\TU/ptm/bx/it/10 - **ROI (Retorno de Inversión)**: Alcanzado
+ []
+
+
+Underfull \hbox (badness 4805) in paragraph at lines 57--58
+\TU/ptm/bx/it/10 en menos de 6 meses, con ahorros estimados de
+ []
+
+[8]
+./sections/05_resultados.tex:67: Missing $ inserted.
+<inserted text> 
+                $
+l.67 
+     
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+
+Underfull \hbox (badness 1776) in paragraph at lines 66--67
+\TU/ptm/bx/it/10 En una universidad con 50.000 estudiantes y múlti-
+ []
+
+
+Underfull \hbox (badness 2689) in paragraph at lines 66--67
+\TU/ptm/bx/it/10 tiempo de inventario de aulas y laboratorios de 2
+ []
+
+
+Underfull \hbox (badness 2753) in paragraph at lines 66--67
+\TU/ptm/bx/it/10 semanas a 2 días. Los datos recolectados permitie-
+ []
+
+
+Underfull \hbox (badness 2884) in paragraph at lines 66--67
+\TU/ptm/bx/it/10 ron identificar patrones de uso que optimizaron la
+ []
+
+
+Underfull \hbox (badness 2173) in paragraph at lines 66--67
+\TU/ptm/bx/it/10 asignación de recursos, resultando en un ahorro de
+ []
+
+./sections/05_resultados.tex:73: Missing $ inserted.
+<inserted text> 
+                $
+l.73 
+     
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+Missing character: There is no ó ("F3) in font cmmi10!
+Missing character: There is no ó ("F3) in font cmmi10!
+Missing character: There is no ó ("F3) in font cmmi10!
+
+Underfull \hbox (badness 10000) in paragraph at lines 72--73
+ []\TU/lmr/m/it/10 3. Caso de Estudio 3: Empresa de
+ []
+
+
+Underfull \hbox (badness 7631) in paragraph at lines 72--73
+\TU/ptm/bx/it/10 implementó Codexy para gestionar 10.000+ ítems.
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 72--73
+\TU/ptm/bx/it/10 La reducción de inventario obsoleto generó
+ []
+
+
+Overfull \hbox (347.739pt too wide) in paragraph at lines 72--73
+\OT1/cmr/m/n/10 150[]000\OML/cmm/m/it/10 enrecuperacionesdecapital; ylapredicci
+ndedemandabasadaendatoshistricosmejorlaeficienciadelacadenadesuministroenun\OT1
+/cmr/m/n/10 25 [][]\OML/cmm/m/it/10 :$ 
+ []
+
+./sections/05_resultados.tex:81: Missing $ inserted.
+<inserted text> 
+                $
+l.81 
+     
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 80--81
+[]\TU/ptm/bx/it/10 - **Costos de Desarrollo**:
+ []
+
+./sections/05_resultados.tex:83: Missing $ inserted.
+<inserted text> 
+                $
+l.83 
+     
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 82--83
+[]\TU/ptm/bx/it/10 - **Costos Operativos Anuales**:
+ []
+
+Missing character: There is no ñ ("F1) in font cmmi10!
+./sections/05_resultados.tex:88: Missing $ inserted.
+<inserted text> 
+                $
+l.88 
+     
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+Missing character: There is no ñ ("F1) in font cmmi10!
+
+Underfull \hbox (badness 10000) in paragraph at lines 84--88
+[]\TU/ptm/bx/it/10 - **Beneficios Cuantificables**: - Reducción
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 84--88
+\TU/ptm/bx/it/10 de pérdidas por inventario: $\OT1/cmr/m/n/10 150[]000/\OML/cmm
+/m/it/10 ao: \OMS/cmsy/m/n/10 ^^@
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 84--88
+\OML/cmm/m/it/10 Ahorroentiempodepersonal \OT1/cmr/m/n/10 :$\TU/ptm/bx/it/10 80
+.000/año (equivalente
+ []
+
+) (./sections/06_discusion.tex [9]
+./sections/06_discusion.tex:30: Missing $ inserted.
+<inserted text> 
+                $
+l.30 
+     
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+Missing character: There is no ó ("F3) in font cmmi10!
+
+Overfull \hbox (14.71004pt too wide) in paragraph at lines 29--30
+[]\TU/ptm/bx/it/10 - **Costos iniciales**: $\OT1/cmr/m/n/10 25\OML/cmm/m/it/10 
+; \OT1/cmr/m/n/10 000\OML/cmm/m/it/10 endesarrolloeimplementacin:$ 
+ []
+
+./sections/06_discusion.tex:32: Missing $ inserted.
+<inserted text> 
+                $
+l.32 
+     
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+Missing character: There is no ó ("F3) in font cmmi10!
+Missing character: There is no é ("E9) in font cmmi10!
+
+Overfull \hbox (44.67711pt too wide) in paragraph at lines 31--32
+[]\TU/ptm/bx/it/10 - **Ahorros anuales**: $\OT1/cmr/m/n/10 75\OML/cmm/m/it/10 ;
+ \OT1/cmr/m/n/10 000\OML/cmm/m/it/10 enreduccindeprdidasporinventario:$ 
+ []
+
+[10]) (./sections/07_conclusiones.tex [11]) (./sections/A1_apendices.tex
 ** WARNING: Ignoring useless \section in Appendix (line 2).
+** WARNING: Ignoring useless \section in Appendix (line 11).
+
+LaTeX Warning: File `graphics/clean_architecture_diagram.pdf' not found on inpu
+t line 16.
+
+./sections/A1_apendices.tex:16: Unable to load picture or PDF file 'graphics/cl
+ean_architecture_diagram.pdf'.
+<to be read again> 
+                   }
+l.16 ...]{graphics/clean_architecture_diagram.pdf}
+                                                  
+The requested image couldn't be read because
+it was not a recognized image format.
+
+
+./sections/A1_apendices.tex:16: Package graphics Error: Division by 0.
+
+See the graphics package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.16 ...]{graphics/clean_architecture_diagram.pdf}
+                                                  
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+File: graphics/clean_architecture_diagram.pdf Graphic file (type pdf)
+<use graphics/clean_architecture_diagram.pdf>
+./sections/A1_apendices.tex:16: Unable to load picture or PDF file 'graphics/cl
+ean_architecture_diagram.pdf'.
+<to be read again> 
+                   \GPT@clipend 
+l.16 ...]{graphics/clean_architecture_diagram.pdf}
+                                                  
+The requested image couldn't be read because
+it was not a recognized image format.
+
+
+Overfull \hbox (160.80157pt too wide) in paragraph at lines 16--17
+ [][] 
+ []
+
+
+LaTeX Warning: File `graphics/data_flow_diagram.pdf' not found on input line 24
+.
+
+./sections/A1_apendices.tex:24: Unable to load picture or PDF file 'graphics/da
+ta_flow_diagram.pdf'.
+<to be read again> 
+                   }
+l.24 ...textwidth]{graphics/data_flow_diagram.pdf}
+                                                  
+The requested image couldn't be read because
+it was not a recognized image format.
+
+
+./sections/A1_apendices.tex:24: Package graphics Error: Division by 0.
+
+See the graphics package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.24 ...textwidth]{graphics/data_flow_diagram.pdf}
+                                                  
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+File: graphics/data_flow_diagram.pdf Graphic file (type pdf)
+<use graphics/data_flow_diagram.pdf>
+./sections/A1_apendices.tex:24: Unable to load picture or PDF file 'graphics/da
+ta_flow_diagram.pdf'.
+<to be read again> 
+                   \GPT@clipend 
+l.24 ...textwidth]{graphics/data_flow_diagram.pdf}
+                                                  
+The requested image couldn't be read because
+it was not a recognized image format.
+
+
+Overfull \hbox (160.80157pt too wide) in paragraph at lines 24--25
+ [][] 
+ []
+
+** WARNING: Ignoring useless \section in Appendix (line 29).
+./sections/A1_apendices.tex:54: Illegal parameter number in definition of \lst@
+temp.
+<to be read again> 
+                   }
+l.54 \begin{lstlisting}[language=C#]
+                                    
+You meant to type ## instead of #, right?
+Or maybe a } was forgotten somewhere earlier, and things
+are all screwed up? I'm going to assume that you meant ##.
+
+./sections/A1_apendices.tex:54: Illegal parameter number in definition of \@tem
+pa.
+<to be read again> 
+                   }
+l.54 \begin{lstlisting}[language=C#]
+                                    
+You meant to type ## instead of #, right?
+Or maybe a } was forgotten somewhere earlier, and things
+are all screwed up? I'm going to assume that you meant ##.
+
+./sections/A1_apendices.tex:54: Illegal parameter number in definition of \lst@
+malias.
+<to be read again> 
+                   }
+l.54 \begin{lstlisting}[language=C#]
+                                    
+You meant to type ## instead of #, right?
+Or maybe a } was forgotten somewhere earlier, and things
+are all screwed up? I'm going to assume that you meant ##.
+
+./sections/A1_apendices.tex:54: Illegal parameter number in definition of \lst@
+temp.
+<to be read again> 
+                   $
+l.54 \begin{lstlisting}[language=C#]
+                                    
+You meant to type ## instead of #, right?
+Or maybe a } was forgotten somewhere earlier, and things
+are all screwed up? I'm going to assume that you meant ##.
+
+./sections/A1_apendices.tex:54: Illegal parameter number in definition of \lst@
+malias.
+<to be read again> 
+                   }
+l.54 \begin{lstlisting}[language=C#]
+                                    
+You meant to type ## instead of #, right?
+Or maybe a } was forgotten somewhere earlier, and things
+are all screwed up? I'm going to assume that you meant ##.
+
+./sections/A1_apendices.tex:54: Illegal parameter number in definition of \lst@
+require.
+<to be read again> 
+                   $
+l.54 \begin{lstlisting}[language=C#]
+                                    
+You meant to type ## instead of #, right?
+Or maybe a } was forgotten somewhere earlier, and things
+are all screwed up? I'm going to assume that you meant ##.
+
+(/opt/texlive/texdir/texmf-dist/tex/latex/listings/lstlang1.sty
+File: lstlang1.sty 2025/11/14 1.11b listings language file
+) (/opt/texlive/texdir/texmf-dist/tex/latex/listings/lstlang2.sty
+File: lstlang2.sty 2025/11/14 1.11b listings language file
+) (/opt/texlive/texdir/texmf-dist/tex/latex/listings/lstlang3.sty
+File: lstlang3.sty 2025/11/14 1.11b listings language file
 )
+
+./sections/A1_apendices.tex:54: Illegal parameter number in definition of \@err
+@                                                                 .
+<to be read again> 
+                   $
+l.54 \begin{lstlisting}[language=C#]
+                                    
+You meant to type ## instead of #, right?
+Or maybe a } was forgotten somewhere earlier, and things
+are all screwed up? I'm going to assume that you meant ##.
+
+./sections/A1_apendices.tex:54: Package Listings Error: Couldn't load requested
+ language.
+
+See the Listings package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.54 \begin{lstlisting}[language=C#]
+                                    
+The following languages weren't loadable:
+    ,c##$
+This may cause errors in the sequel.
+
+./sections/A1_apendices.tex:54: Illegal parameter number in definition of \lst@
+malias.
+<to be read again> 
+                   }
+l.54 \begin{lstlisting}[language=C#]
+                                    
+You meant to type ## instead of #, right?
+Or maybe a } was forgotten somewhere earlier, and things
+are all screwed up? I'm going to assume that you meant ##.
+
+./sections/A1_apendices.tex:54: Illegal parameter number in definition of \lst@
+temp.
+<to be read again> 
+                   $
+l.54 \begin{lstlisting}[language=C#]
+                                    
+You meant to type ## instead of #, right?
+Or maybe a } was forgotten somewhere earlier, and things
+are all screwed up? I'm going to assume that you meant ##.
+
+./sections/A1_apendices.tex:54: Illegal parameter number in definition of \lst@
+malias.
+<to be read again> 
+                   }
+l.54 \begin{lstlisting}[language=C#]
+                                    
+You meant to type ## instead of #, right?
+Or maybe a } was forgotten somewhere earlier, and things
+are all screwed up? I'm going to assume that you meant ##.
+
+
+./sections/A1_apendices.tex:54: Package Listings Error: language c## undefined.
+
+
+See the Listings package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.54 \begin{lstlisting}[language=C#]
+                                    
+The language is not loadable. Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+./sections/A1_apendices.tex:113: Illegal parameter number in definition of \lst
+@temp.
+<to be read again> 
+                   }
+l.113 \begin{lstlisting}[language=C#]
+                                     
+You meant to type ## instead of #, right?
+Or maybe a } was forgotten somewhere earlier, and things
+are all screwed up? I'm going to assume that you meant ##.
+
+./sections/A1_apendices.tex:113: Illegal parameter number in definition of \@te
+mpa.
+<to be read again> 
+                   }
+l.113 \begin{lstlisting}[language=C#]
+                                     
+You meant to type ## instead of #, right?
+Or maybe a } was forgotten somewhere earlier, and things
+are all screwed up? I'm going to assume that you meant ##.
+
+./sections/A1_apendices.tex:113: Illegal parameter number in definition of \lst
+@malias.
+<to be read again> 
+                   }
+l.113 \begin{lstlisting}[language=C#]
+                                     
+You meant to type ## instead of #, right?
+Or maybe a } was forgotten somewhere earlier, and things
+are all screwed up? I'm going to assume that you meant ##.
+
+./sections/A1_apendices.tex:113: Illegal parameter number in definition of \lst
+@temp.
+<to be read again> 
+                   $
+l.113 \begin{lstlisting}[language=C#]
+                                     
+You meant to type ## instead of #, right?
+Or maybe a } was forgotten somewhere earlier, and things
+are all screwed up? I'm going to assume that you meant ##.
+
+./sections/A1_apendices.tex:113: Illegal parameter number in definition of \lst
+@malias.
+<to be read again> 
+                   }
+l.113 \begin{lstlisting}[language=C#]
+                                     
+You meant to type ## instead of #, right?
+Or maybe a } was forgotten somewhere earlier, and things
+are all screwed up? I'm going to assume that you meant ##.
+
+./sections/A1_apendices.tex:113: Illegal parameter number in definition of \lst
+@require.
+<to be read again> 
+                   $
+l.113 \begin{lstlisting}[language=C#]
+                                     
+You meant to type ## instead of #, right?
+Or maybe a } was forgotten somewhere earlier, and things
+are all screwed up? I'm going to assume that you meant ##.
+
+(/opt/texlive/texdir/texmf-dist/tex/latex/listings/lstlang1.sty
+File: lstlang1.sty 2025/11/14 1.11b listings language file
+) (/opt/texlive/texdir/texmf-dist/tex/latex/listings/lstlang2.sty
+File: lstlang2.sty 2025/11/14 1.11b listings language file
+) (/opt/texlive/texdir/texmf-dist/tex/latex/listings/lstlang3.sty
+File: lstlang3.sty 2025/11/14 1.11b listings language file
+)
+
+./sections/A1_apendices.tex:113: Illegal parameter number in definition of \@er
+r@                                                                 .
+<to be read again> 
+                   $
+l.113 \begin{lstlisting}[language=C#]
+                                     
+You meant to type ## instead of #, right?
+Or maybe a } was forgotten somewhere earlier, and things
+are all screwed up? I'm going to assume that you meant ##.
+
+./sections/A1_apendices.tex:113: Package Listings Error: Couldn't load requeste
+d language.
+
+See the Listings package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.113 \begin{lstlisting}[language=C#]
+                                     
+The following languages weren't loadable:
+    ,c##$
+This may cause errors in the sequel.
+
+./sections/A1_apendices.tex:113: Illegal parameter number in definition of \lst
+@malias.
+<to be read again> 
+                   }
+l.113 \begin{lstlisting}[language=C#]
+                                     
+You meant to type ## instead of #, right?
+Or maybe a } was forgotten somewhere earlier, and things
+are all screwed up? I'm going to assume that you meant ##.
+
+./sections/A1_apendices.tex:113: Illegal parameter number in definition of \lst
+@temp.
+<to be read again> 
+                   $
+l.113 \begin{lstlisting}[language=C#]
+                                     
+You meant to type ## instead of #, right?
+Or maybe a } was forgotten somewhere earlier, and things
+are all screwed up? I'm going to assume that you meant ##.
+
+./sections/A1_apendices.tex:113: Illegal parameter number in definition of \lst
+@malias.
+<to be read again> 
+                   }
+l.113 \begin{lstlisting}[language=C#]
+                                     
+You meant to type ## instead of #, right?
+Or maybe a } was forgotten somewhere earlier, and things
+are all screwed up? I'm going to assume that you meant ##.
+
+
+./sections/A1_apendices.tex:113: Package Listings Error: language c## undefined
+.
+
+See the Listings package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.113 \begin{lstlisting}[language=C#]
+                                     
+The language is not loadable. Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+[12]
+** WARNING: Ignoring useless \section in Appendix (line 149).
+./sections/A1_apendices.tex:159: Undefined control sequence.
+l.159 ...spuesta API & 150ms & <200ms & \checkmark
+                                                   \\
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+./sections/A1_apendices.tex:161: Undefined control sequence.
+l.161 ...carga app móvil & 2.5s & <3s & \checkmark
+                                                   \\
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+./sections/A1_apendices.tex:163: Undefined control sequence.
+l.163 ...l sistema & 99.9\% & >99.5\% & \checkmark
+                                                   \\
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+./sections/A1_apendices.tex:165: Undefined control sequence.
+l.165 ...ra de pruebas & 85\% & >80\% & \checkmark
+                                                   \\
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+Overfull \hbox (44.31223pt too wide) in paragraph at lines 155--168
+ [][] 
+ []
+
+** WARNING: Ignoring useless \section in Appendix (line 170).
+
+Underfull \hbox (badness 10000) in paragraph at lines 182--183
+[]\TU/ptm/bx/it/10 Clonar el repositorio: \TU/lmtt/m/n/10 git clone
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 184--185
+[]\TU/ptm/bx/it/10 Configurar variables de entorno en
+ []
+
+./sections/A1_apendices.tex:187: Misplaced alignment tab character &.
+<argument> cd client &
+                      & npm install && npm run build
+l.187 ...d client && npm install && npm run build}
+                                                  
+I can't figure out why you would want to use a tab mark
+here. If you just want an ampersand, the remedy is
+simple: Just type `I\&' now. But if some right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+./sections/A1_apendices.tex:187: Misplaced alignment tab character &.
+<argument> cd client &&
+                        npm install && npm run build
+l.187 ...d client && npm install && npm run build}
+                                                  
+I can't figure out why you would want to use a tab mark
+here. If you just want an ampersand, the remedy is
+simple: Just type `I\&' now. But if some right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+./sections/A1_apendices.tex:187: Misplaced alignment tab character &.
+<argument> cd client && npm install &
+                                     & npm run build
+l.187 ...d client && npm install && npm run build}
+                                                  
+I can't figure out why you would want to use a tab mark
+here. If you just want an ampersand, the remedy is
+simple: Just type `I\&' now. But if some right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+./sections/A1_apendices.tex:187: Misplaced alignment tab character &.
+<argument> cd client && npm install &&
+                                       npm run build
+l.187 ...d client && npm install && npm run build}
+                                                  
+I can't figure out why you would want to use a tab mark
+here. If you just want an ampersand, the remedy is
+simple: Just type `I\&' now. But if some right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+
+Underfull \hbox (badness 5878) in paragraph at lines 187--188
+[]\TU/ptm/bx/it/10 Construir el frontend: \TU/lmtt/m/n/10 cd client  npm instal
+l
+ []
+
+** WARNING: Ignoring useless \section in Appendix (line 191).
+** WARNING: Ignoring useless \section in Appendix (line 204).
+** WARNING: Ignoring useless \section in Appendix (line 238).
+** WARNING: Ignoring useless \section in Appendix (line 252).
+
+Overfull \hbox (61.15244pt too wide) in paragraph at lines 258--273
+ [][] 
+ []
+
+** WARNING: Ignoring useless \section in Appendix (line 275).
+
+Underfull \hbox (badness 3907) in paragraph at lines 281--282
+[]\TU/ptm/bx/it/10 2. **Valor de la Automatización**: Herramientas
+ []
+
+[13])
 Underfull \hbox (badness 1694) in paragraph at lines 36--36
 []\TU/ptm/bx/it/10 M. J. Peñalver Higuera y J. J. Isea-Argüelles,
  []
@@ -964,7 +1770,9 @@ Before submitting the final camera ready copy, remember to:
  uses only Type 1 fonts and that every step in the generation
  process uses the appropriate paper size.
 
-[6] (build/main_ieee.aux
+[14
+
+] (build/main_ieee.aux
 LaTeX Info: Redefining \sptext on input line 12.
 LaTeX Info: Redefining \. on input line 12.
 LaTeX Info: Redefining \% on input line 12.
@@ -977,18 +1785,18 @@ L3 programming layer <2025-11-06>
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
 Package rerunfilecheck Info: File `main_ieee.out' has not changed.
-(rerunfilecheck)             Checksum: 2BAC022CA46268CB7102D6BAB97CEC3D;6782.
+(rerunfilecheck)             Checksum: 6B21F8CED1281380E82FE33BCC79E585;15686.
 Package logreq Info: Writing requests to 'main_ieee.run.xml'.
 \openout1 = `main_ieee.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 31908 strings out of 468179
- 675331 string characters out of 5435042
- 1619838 words of memory out of 5000000
- 60276 multiletter control sequences out of 15000+600000
- 632108 words of font info for 100 fonts, out of 8000000 for 9000
+ 31947 strings out of 468179
+ 680313 string characters out of 5435042
+ 1748558 words of memory out of 5000000
+ 60297 multiletter control sequences out of 15000+600000
+ 632100 words of font info for 99 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
- 78i,13n,83p,1006b,4786s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 78i,13n,83p,1178b,4786s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
-Output written on build/main_ieee.xdv (6 pages, 289384 bytes).
+Output written on build/main_ieee.xdv (14 pages, 723796 bytes).
